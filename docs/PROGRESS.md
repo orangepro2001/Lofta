@@ -50,14 +50,19 @@ python3 tools/story_check.py
 
 剩余工作集中在一般项，全是“改一两句”的活，不动主线。下一件事按 `R3-response.md` 第四节的表往下走即可。
 
-## 迁机注意
+## 仓库与迁机
 
-**这个目录不是 git 仓库**（`git status` 报 not a git repository）。所有状态都在文件里，没有提交可以回滚，迁机就是整棵树拷过去。
+仓库：`git@github.com:orangepro2001/Lofta.git`，主分支 `main`。基线提交 `0fcad6d`（Initial commit）。
 
-- 要拷：`content/`、`docs/`、`scripts/`、`src/`、`tests/`、`third_party/`、`tools/`、`Makefile`、`VERSION`、`README.md`、`CLAUDE.md`、`.gitignore`
-- 不用拷：`build/`（19 MB 产物，含 `build/gen/content_data.lua`，会在新机重新生成）、`tools/__pycache__/`
+迁机就是 clone：
+
+```
+git clone git@github.com:orangepro2001/Lofta.git
+```
+
+- 不进仓库的：`build/`（产物，含 `build/gen/content_data.lua`，`storyc.py` 会重新生成）、`__pycache__/`、`*.pyc`、`lofta_error.txt`、`lofta_update.log`
+- `third_party/` 进仓库，含 `raylib-6.2/lib/libraylib.a`（2.1 MB，egg 的 mingw 编的，`tools/build_raylib.sh` 可重建）。`.gitattributes` 里 `third_party/** -text`，保证 vendored 文件与上游逐字节一致。
 - 编译全在 egg 上：`tools/egg.sh test` / `shots` / `win`。新机要先把 `tools/egg.sh` 里的主机和路径改过来，代码本身不依赖本机路径。
-- 本次会话改过的文件：`content/` 下的 `cards/ch1..ch7.toml`、`cast/ch4.toml`、`cast/ch5.toml`、`dialogue/ch1/main.dlg`、`ch2/{bowell,town}.dlg`、`ch3/{law,register,tuck}.dlg`、`ch4/{day,fourteenth,night}.dlg`、`ch5/{act1,act2,act3,term}.dlg`、`ch6/{act1,act2,act3}.dlg`、`ch7/{coda,endings,finale,main}.dlg`；`scripts/cards.lua`、`scripts/screens/board.lua`；`tools/{storyc,story_check}.py`；`docs/story/redteam/R3-response.md`、本文件。
 
 ## 下一步
 
