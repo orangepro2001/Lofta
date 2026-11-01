@@ -1,0 +1,340 @@
+# Chapter 7, Wednesday 13 December. Two paid slots, then the file, the Rotterdam paper, the choice.
+# Three places are worth a slot and there are two slots. The last slot burns the three the ending uses.
+
+=== ch7_wall
+旁白: 穷人坑在墓地北墙下。土冻硬了，司事正拿铁锹敲。
+司事: 太太又来了。这回找什么？
+露丝: 墙根有块石头。
+司事: 有。我拔过一回，隔天又嵌回去了。后来我就不拔了。
+旁白: 她蹲下去，用袖子擦掉霜。一块手掌大的石头，嵌在砖缝里。
+旁白: 字刻得很浅，间距一丝不差，是排字人的手。
+旁白: H、A、N、N、A、H。下面一行：1748。
+旁白: 反字她一向读得慢。这一块不用读，只有两个 N 朝反。
+旁白: 她把手掌盖在上面，等手掌底下的霜化完。
+司事: 这是什么记号？
+露丝: 周报上的一个数。
+旁白: 她站起来，从坑角往东数步子。十一步。这种事她记得住。
+~ flag hannah_stone
+~ card c7_stone
+~ add ch7_days 1
+~ time 1
+if var:ch7_days>=2
+  旁白: 天擦黑了。
+  ~ time 3
+else
+  旁白: 太阳过了头顶。今天还够走一处。
+end
+
+=== ch7_holt
+旁白: 白天的印刷所全是人。排字的在合总账的版，一个老头在给印机上油。
+旁白: 他左耳塞着一团棉絮，见她过来，偏过右边的脸。
+霍尔特: 太太站这边。那边聋了，四十年的印机震的。
+露丝: 门是你留的。
+霍尔特: 门是我留的。他带走的那盒铅字也是我装的。
+霍尔特: 1726年他来当学徒，十四岁。排错字我打手心，一共打过三回。
+霍尔特: 昨夜我在纸库后面。这只耳朵好使。
+露丝: 全听见了？
+霍尔特: 我本来以为他躲的是债。
+旁白: 他拿油布擦手，擦了很久，手上的墨一点没少。
+霍尔特: 我留了十个月的门，他没对我说过一句假话。这比说假话难受。
+露丝: 上老贝利，说他是谁。
+霍尔特: 我一说，他就是个死人。
+露丝: 他一月就是了。
+霍尔特: ……这话他会喜欢。
+霍尔特: 你告诉菲尔丁先生，霍尔特认得他师弟的手。
+~ flag holt_found
+~ add ch7_days 1
+~ time 1
+if var:ch7_days>=2
+  旁白: 天擦黑了。
+  ~ time 3
+else
+  旁白: 太阳过了头顶。今天还够走一处。
+end
+
+=== ch7_holt_again
+旁白: 霍尔特在给印机上油，见她过来，偏过右边的脸。
+霍尔特: 我说过上庭就上庭。七十岁的人，不改口。
+霍尔特: 昨夜我在纸库后面，全听见了。太太，别问我怎么想。
+
+=== ch7_counsel
+if flag:pereira_hanged
+  旁白: 玛德莱娜的门没有开。她到科文特花园去找以利亚。
+  以利亚: 七个半死一个，这个数没错。我在讲堂切过这样的孩子。
+  以利亚: 算术我不行。可这张纸上没有一行蠢话，这才吓人。
+  露丝: 我问他这是谁的账本。他答不上来。
+  以利亚: 他答不上来，他也没停手。
+  以利亚: 您的脸色像第三天的尸体。坐下，吃点东西。
+else
+  旁白: 斯皮塔佛德。玛德莱娜把校样铺在母亲的账桌上，用镇纸压住四角。
+  旁白: 她算了一个上午。
+  玛德莱娜: 八百四十九，没有错。一千零三十八，没有错。
+  玛德莱娜: Mon Dieu。连零头都对。
+  露丝: 我问他这是谁的账本。他答不上来。
+  玛德莱娜: 《女士日记》没有这种题。
+  玛德莱娜: 我母亲看了一眼，说这个人本该替她管账。她没有说笑。
+  旁白: 她放下笔，手指上有墨。
+  玛德莱娜: 你吃过东西吗？
+end
+~ add ch7_days 1
+~ time 1
+if var:ch7_days>=2
+  旁白: 天擦黑了。
+  ~ time 3
+else
+  旁白: 太阳过了头顶。今天还够走一处。
+end
+-> ch7_tally
+
+=== ch7_flea
+旁白: 布罗德街口，跳蚤抱着一只筐，筐上盖着麻袋。
+跳蚤: 太太，您摸摸。硬的。六十个鸡蛋，昨夜霜冻透了。
+跳蚤: 明天交易所前上枷，我本想卖给人砸。一便士三个。
+露丝: 冻硬的鸡蛋砸在脸上，砸死了算谁的？
+跳蚤: ……算鸡蛋的？
+露丝: 算你的。
+跳蚤: 那我抱回去化一化。
+旁白: 他把筐搂进怀里，打了个寒战，又搂紧了一点。
+
+=== ch7_eleven
+旁白: 迪奥特街酒窖门口，修鞋匠霍奇举着一张印的表，拉德大妈叉着腰。
+修鞋匠霍奇: 《十一日折减表》！九月少了十一天，草褥钱要退！
+拉德大妈: 行。十一天退你三便士。你九月欠我三个星期，我也照这张表算。
+旁白: 霍奇看了看表，把它折起来，塞回帽子里。
+修鞋匠霍奇: 太太是有学问的人。那十一天到底算谁的？
+露丝: 问银街。
+拉德大妈: 银街也不退钱。
+
+=== ch7_case
+~ flag ch7_last
+旁白: 星期三，天擦黑。她屋里点了一支蜡烛。
+if flag:pereira_hanged
+  旁白: 以利亚抱来一捆纸，用解剖刀压住。
+else
+  旁白: 玛德莱娜把案卷摊开，三段写在三张纸上。
+end
+-> ch7_tally
+
+=== ch7_tally
+~ set link1 0
+~ set link2 0
+~ set link3 0
+~ set links 0
+if flag:pym_spoke or flag:holt_found
+  ~ set link1 1
+  ~ add links 1
+end
+if flag:pym_spoke or has:c5_hale_letter or flag:pereira_cleared and flag:holt_found or flag:gale_book
+  ~ set link2 1
+  ~ add links 1
+end
+if flag:crane_taken or (flag:bottles_tested and has:c3_ten_list) or (flag:ned_alive and flag:holt_found)
+  ~ set link3 1
+  ~ add links 1
+end
+# tier picks the prose for her share of the fund: 1 all, 2 3/4, 3 2/3, 4 3/5, 5 1/2, 6 1/3.
+~ set fin_r 1
+~ set fin_o 0
+if flag:lucy_alive
+  ~ add fin_r 1
+end
+if flag:will_alive
+  ~ add fin_r 1
+end
+if not flag:pereira_hanged
+  if flag:kitty_alive
+    ~ add fin_o 1
+  end
+  if flag:ned_alive
+    ~ add fin_o 1
+  end
+end
+if var:fin_o==0
+  ~ set tier 1
+elif var:fin_r==3 and var:fin_o==1
+  ~ set tier 2
+elif var:fin_r==2 and var:fin_o==1
+  ~ set tier 3
+elif var:fin_r==3 and var:fin_o==2
+  ~ set tier 4
+elif var:fin_r==1 and var:fin_o==2
+  ~ set tier 6
+else
+  ~ set tier 5
+end
+-> ch7_read
+
+=== ch7_read
+if flag:pereira_hanged
+  以利亚: 只算能上庭开口的人。只有您一个人能说的，不算。
+else
+  玛德莱娜: 只算能当庭说话的证据。只有你一人能说的，不算。
+end
+旁白: 第一段：老塔克就是托马斯。
+if flag:pym_spoke
+  旁白: 皮姆肯宣誓。
+end
+if flag:holt_found
+  旁白: 霍尔特肯宣誓。
+end
+if var:link1==1
+  if flag:pereira_hanged
+    以利亚: 这一节接上了。
+  else
+    玛德莱娜: 第一段闭合。
+  end
+else
+  if flag:pereira_hanged
+    以利亚: 这一节是断的。没有人替您说这句话。
+  else
+    玛德莱娜: 第一段缺。没有人替你说这句话。
+  end
+  if flag:exhumed
+    旁白: 开棺只证明棺材里不是他，证明不了岗亭里是他。
+  end
+end
+旁白: 第二段：托马斯就是赫尔。
+if flag:pym_spoke
+  旁白: 皮姆转过赫尔的信。
+end
+if has:c5_hale_letter
+  旁白: 威尔那封信是赫尔亲笔。
+end
+if flag:pereira_cleared and flag:holt_found
+  旁白: 佩雷拉追到了字模，霍尔特认得出那是他师弟摔出来的字。
+end
+if flag:gale_book
+  旁白: 盖尔的札记在，实物。
+end
+if var:link2==1
+  if flag:pereira_hanged
+    以利亚: 这一节也接上了。
+  else
+    玛德莱娜: 第二段闭合。
+  end
+else
+  if flag:pereira_hanged
+    以利亚: 这一节断了。赫尔是谁，庭上没有人知道。
+  else
+    玛德莱娜: 第二段缺。赫尔是谁，庭上没有人能说。
+  end
+end
+旁白: 第三段：赫尔就是蓝瓶。
+if flag:crane_taken
+  旁白: 克兰在押，他灌的瓶子。
+end
+if flag:ned_alive and flag:holt_found
+  旁白: 内德见过格里格斯取货，霍尔特认出那张单子和赫尔的信是同一副字。
+elif flag:ned_alive
+  旁白: 内德见过格里格斯取货，可这张单子是谁印的，还没有人对上。
+end
+if flag:bottles_tested and has:c3_ten_list
+  旁白: 以利亚化验过，单子上记着十处。
+end
+if var:link3==1
+  if flag:pereira_hanged
+    以利亚: 最后一节，接上了。
+  else
+    玛德莱娜: 第三段闭合。
+  end
+else
+  if flag:pereira_hanged
+    以利亚: 最后一节断了。瓶子和赫尔之间是空的。
+  else
+    玛德莱娜: 第三段缺。瓶子和赫尔之间，庭上是空的。
+  end
+end
+if var:links>=3
+  if flag:pereira_hanged
+    以利亚: 三节全了。您一个字不用说。
+  else
+    玛德莱娜: 三段闭合。你可以一个字也不说。
+  end
+elif var:link1==0
+  if flag:pereira_hanged
+    以利亚: 缺第一节就上庭，您就是个说死人还活着的女人。
+  else
+    玛德莱娜: 缺第一段上庭，你就是一个说死人还活着的女人。
+  end
+else
+  if flag:pereira_hanged
+    以利亚: 他们能证明他是您丈夫，证明不了别的。他走出去，您留下。
+  else
+    玛德莱娜: 他们证明了他是你丈夫，证明不了别的。他开释，你闭嘴。
+  end
+end
+if flag:ch7_last
+  -> ch7_rotterdam
+end
+
+=== ch7_rotterdam
+if flag:pereira_hanged
+  以利亚: 还有那张纸。上面写着玛丽什么时候下葬。
+else
+  玛德莱娜: 还有鹿特丹那张纸。法庭会按旧式读。
+end
+旁白: 英国人教堂牧师的手笔。
+旁白: “星期三，1744/5 年 2 月 10 日，玛丽·阿什比下葬。”
+旁白: 婚礼在 2 月 3 日。按旧式读，玛丽比婚礼多活了七天。
+旁白: 重婚，婚姻无效。她就不是他的妻子。她可以宣誓。
+旁白: 她背过身去，翻开《历书》。
+旁白: 旧式，1745 年 2 月 10 日。星期日。
+旁白: 纸上写的是星期三。
+旁白: 星期不跳。写星期三，只能是当地的新式。
+旁白: 新式 2 月 10 日，就是旧式 1 月 30 日。
+旁白: 比婚礼早四天。婚姻有效。他那句假话，说出口时已经是真的了。
+if flag:pereira_hanged
+  旁白: 这一招她认得。她用它救佩雷拉，没救成。
+else
+  旁白: 这一招她认得。她用它救过佩雷拉。
+end
+if var:links==0
+  旁白: 三段全断。这张纸就算准她开口，她也只有一张嘴。
+end
+-> ch7_decide
+
+=== ch7_decide
+旁白: 天黑透了。银街的版该上机了。
+* 上法庭
+  if var:links>=3
+    ~ set route 1
+    -> ch7_court
+  end
+  -> ch7_warn
+* (var:links>=1) 用鹿特丹的纸
+  -> ch7_paper
+* (flag:have_cordial) 亲手结账
+  -> ch7_end_d
+* (var:links>=2 and flag:hannah_stone) 要他自己认
+  -> ch7_end_e
+* 沉默
+  -> ch7_silence
+
+=== ch7_warn
+if var:link1==0
+  旁白: 案卷缺第一段。上庭，只有她一个人说这句话。
+else
+  旁白: 案卷后面缺着。上庭，有人证明他是她丈夫，然后没有了。
+end
+* 再想想
+  -> ch7_decide
+* 还是上法庭
+  if var:link1==0
+    ~ set route 3
+  else
+    ~ set route 4
+  end
+  -> ch7_court
+
+=== ch7_paper
+查验: 这张牌是谬误。
+查验: 此地当各地：你把鹿特丹的日子当成英国的日子读。
+查验: 星期三只能是新式。玛丽死在婚礼之前四天。婚姻有效。
+查验: 法庭不会查。只有被告一开口就能拆穿。
+查验: 查验从不替你裁定。这是唯一一次。你确定吗？
+* 放回去
+  -> ch7_decide
+* 确定。我知道它是错的
+  旁白: 她把那张纸放到案卷最上面，压平。
+  ~ set route 2
+  -> ch7_court

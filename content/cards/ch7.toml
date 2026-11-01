@@ -1,0 +1,121 @@
+# Chapter 7 cards. The one verb left is to do it anyway: c7_no_wife is the only card the game
+# ever names as a fallacy to the player's face, in ch7_paper.
+
+[[card]]
+id = "c7_he_is"
+kind = "fact"
+title = "他在灯下"
+text = "银街印刷所。老塔克脱下手套，是托马斯·阿什比。他什么也没有否认。这件事只有她一个人看见。"
+source = "亲眼所见"
+chapter = 7
+tags = ["tuck_is_thomas"]
+
+[[card]]
+id = "c7_ledger"
+kind = "fact"
+title = "铅排的账"
+text = "他用十个月排出的一张校样：底数、八行边际账、开支一栏。她从下往上加过，数是对的。"
+source = "托马斯的校样"
+chapter = 7
+tags = ["ledger"]
+single_path = true
+
+[[card]]
+id = "c7_rule_margin"
+kind = "rule"
+title = "每一条都划算"
+text = "不杀人净救 570 个孩子，只剩三条命净救约 2,080 个。每少一条别人的命，净多救 57 至 519 个。"
+source = "托马斯的校样"
+certainty = "必然"
+chapter = 7
+tags = ["rule_margin"]
+
+[[card]]
+id = "c7_rule_wife"
+kind = "rule"
+title = "妻子不得作证"
+text = "妻子不得作证指控丈夫。规矩只看婚姻是否有效，用不着谁提出来。"
+source = "普通法"
+certainty = "必然"
+chapter = 7
+tags = ["rule_wife"]
+single_path = true
+
+[[card]]
+id = "c7_bar"
+kind = "inference"
+title = "证明得越好，越不能开口"
+text = "“这个人是我丈夫。”这句话若为真，说话的人就是他的妻子，这句话不算数。她可以作证，只要没有人证明他是谁；可她要说的正是他是谁。"
+source = "合成"
+chapter = 7
+
+[[card]]
+id = "c7_true_date"
+kind = "inference"
+title = "星期不跳"
+text = "旧式 2 月 10 日是星期日。纸上写星期三，只能是新式，等于旧式 1 月 30 日，比婚礼早四天。婚姻有效。"
+source = "合成"
+chapter = 7
+
+[[card]]
+id = "c7_whose"
+kind = "inference"
+title = "这是谁的账本"
+text = "算术没有错。南的存根押的是一先令。这张账是他一个人记的，没有人准过。这一句救不了一个孩子。"
+source = "合成"
+chapter = 7
+
+[[card]]
+id = "c7_stone"
+kind = "fact"
+title = "墙根的石头"
+text = "穷人坑北墙下，手掌大的一块石头，排字人的手：H、A、N、N、A、H，1748。两个 N 朝反。从坑角往东十一步。"
+source = "亲眼所见"
+chapter = 7
+tags = ["stone"]
+
+[[card]]
+id = "c7_no_wife"
+kind = "fallacy"
+title = "她不是他的妻子"
+text = "玛丽葬于 1744/5 年 2 月 10 日，婚礼在 2 月 3 日。前妻尚在，婚姻无效，她可以宣誓。"
+source = "合成"
+chapter = 7
+
+[[recipe]]
+id = "d7_bar"
+verb = "deduce"
+major = "c7_rule_wife"
+minor = "tuck_is_thomas"
+output = "c7_bar"
+form = "若甲是其妻，甲的证词不算；证明此人是其夫，就证明了甲是其妻；所以证明得越好，证词越不算。"
+explain = "妻子不得作证指控丈夫。谁证明了老塔克是托马斯，谁就证明了她是他的妻子。"
+
+[[recipe]]
+id = "d7_true_date"
+verb = "deduce"
+major = "c3_rule_ns"
+minor = "rotterdam"
+output = "c7_true_date"
+form = "若甲则乙；甲；所以乙。"
+explain = "荷兰用新式。纸上的星期三对得上新式，对不上旧式，所以这个日子要减十一天。"
+
+[[recipe]]
+id = "f7_no_wife"
+verb = "deduce"
+major = "c3_rule_dual"
+minor = "rotterdam"
+fallacy = "此地当各地"
+fault = "双年写法只说明年份是英国人写的。日子是鹿特丹的。旧式 2 月 10 日是星期日，纸上写的是星期三。"
+output = "c7_no_wife"
+form = "英国人的文书按旧式读；此文书是英国人写的；所以此日期是旧式。"
+explain = "年份写成 1744/5，是英国写法，法庭会按旧式读。"
+
+[[recipe]]
+id = "r7_whose"
+verb = "rebut"
+target = "c7_rule_margin"
+counter = "stub"
+output = "c7_whose"
+form = "每一条都划算；可是画押的人押的是一先令；所以这条规律只说明算术，说明不了谁有权下笔。"
+explain = "数没有错，反驳不了数。能反驳的只是他手里那支笔。"

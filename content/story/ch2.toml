@@ -1,0 +1,170 @@
+n = 2
+title = "丝与数"
+dates = "1752年8月10日至15日"
+slots = 14
+start = "ch2_open"
+climax = "ch2_end"
+required = ["c2_rule_list", "c2_rule_bottle", "c2_rule_silence"]
+
+# Monday has slots 0 and 1, Tuesday 2 to 4, Wednesday 5 and 6, Thursday 7 and 8, Friday 9 and 10,
+# Saturday 11 to 13. Spots read these forced scenes through seen: to tell the days apart.
+[[forced]]
+slot = 1
+talk = "ch2_mad_arrives"
+cond = "flag:ch1_bill_true"
+
+[[forced]]
+slot = 2
+talk = "ch2_tuck_flyer"
+
+[[forced]]
+slot = 5
+talk = "ch2_bowell_omen"
+
+[[forced]]
+slot = 8
+talk = "ch2_bowell_dead"
+
+[[forced]]
+slot = 9
+talk = "ch2_decimals"
+
+[[forced]]
+slot = 10
+talk = "ch2_report"
+
+[[forced]]
+slot = 11
+talk = "ch2_saturday"
+
+[[forced]]
+slot = 12
+talk = "ch2_binding"
+cond = "flag:ch1_blamed_keane"
+
+[[spot]]
+id = "ch2_body"
+name = "乔纳斯的尸体"
+place = "织工阁楼楼下"
+talk = "ch2_body"
+
+[[spot]]
+id = "ch2_marthe"
+name = "玛尔特"
+place = "织工阁楼"
+talk = "ch2_marthe"
+
+[[spot]]
+id = "ch2_bouchet"
+name = "布歇太太"
+place = "织工阁楼楼梯"
+talk = "ch2_bouchet"
+
+[[spot]]
+id = "ch2_jean"
+name = "小让"
+place = "织工阁楼"
+talk = "ch2_jean"
+
+[[spot]]
+id = "ch2_mad"
+name = "玛德莱娜"
+place = "勒费弗尔宅"
+talk = "ch2_mad"
+cond = "flag:ch2_met_mad or not flag:ch1_bill_true"
+
+[[spot]]
+id = "ch2_mme"
+name = "勒费弗尔太太"
+place = "勒费弗尔宅"
+talk = "ch2_mme"
+cond = "flag:ch2_owed_coffin"
+
+[[spot]]
+id = "ch2_pub"
+name = "数学会"
+place = "本·琼森头像酒馆"
+talk = "ch2_pub"
+
+[[spot]]
+id = "ch2_moivre"
+name = "棣莫弗"
+place = "老斯劳特咖啡馆"
+talk = "ch2_moivre"
+cond = "flag:ch2_met_mad"
+
+[[spot]]
+id = "ch2_maud"
+name = "莫德"
+place = "科文特花园水果市场"
+talk = "ch2_maud"
+
+[[spot]]
+id = "ch2_elias"
+name = "缝橘子的年轻人"
+place = "科文特花园水果市场"
+talk = "ch2_elias"
+
+[[spot]]
+id = "ch2_sexton"
+name = "司事"
+place = "圣吉尔斯墓地"
+talk = "ch2_sexton"
+
+[[spot]]
+id = "ch2_pym"
+name = "皮姆"
+place = "圣吉尔斯法衣室"
+talk = "ch2_pym"
+
+[[spot]]
+id = "ch2_rudd"
+name = "拉德大妈"
+place = "迪奥特街酒窖"
+talk = "ch2_rudd"
+
+[[spot]]
+id = "ch2_keane"
+name = "基恩太太"
+place = "迪奥特街"
+talk = "ch2_keane"
+
+[[spot]]
+id = "ch2_flea"
+name = "跳蚤"
+place = "布罗德街"
+talk = "ch2_flea"
+
+[[spot]]
+id = "ch2_home"
+name = "托马斯的旧账本"
+place = "露丝屋里"
+talk = "ch2_home"
+
+[[spot]]
+id = "ch2_tuck"
+name = "老塔克"
+place = "教堂巷岗亭"
+talk = "ch2_tuck_again"
+cond = "seen:ch2_tuck_flyer"
+
+[[spot]]
+id = "ch2_bowell"
+name = "鲍尔大娘"
+place = "济贫院后墙根"
+talk = "ch2_bowell"
+cond = "not flag:bowell_dead"
+
+[[spot]]
+id = "ch2_gin"
+name = "鲍尔的酒瓶"
+place = "迪奥特街酒窖"
+talk = "ch2_gin"
+cond = "flag:bowell_dead"
+
+[[spot]]
+id = "ch2_child"
+name = "送酒的孩子"
+place = "圣吉尔斯教堂台阶"
+talk = "ch2_child"
+cond = "flag:bowell_dead and not seen:ch2_report"

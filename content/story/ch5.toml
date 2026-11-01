@@ -1,0 +1,209 @@
+n = 5
+title = "新式"
+dates = "1752年9月14日至10月初"
+slots = 12
+start = "ch5_open"
+climax = "ch5_term"
+required = ["c5_clean_wine", "c5_no_skip", "c5_trust"]
+
+# Act one.
+[[forced]]
+slot = 0
+talk = "ch5_room"
+
+[[forced]]
+slot = 1
+talk = "ch5_test"
+
+[[forced]]
+slot = 2
+talk = "ch5_report"
+
+[[forced]]
+slot = 2
+talk = "ch5_tuck_cold"
+
+[[forced]]
+slot = 3
+talk = "ch5_anon"
+
+# Act two.
+[[forced]]
+slot = 4
+talk = "ch5_pereira_home"
+
+[[forced]]
+slot = 5
+talk = "ch5_hearing_one"
+
+[[forced]]
+slot = 7
+talk = "ch5_tuck_six"
+
+[[forced]]
+slot = 8
+talk = "ch5_hearing_two"
+
+[[forced]]
+slot = 9
+talk = "ch5_win"
+cond = "flag:pereira_cleared"
+
+[[forced]]
+slot = 9
+talk = "ch5_loss"
+cond = "flag:pereira_committed"
+
+# Act three ends at dusk on the term day, whatever the player did with the afternoon.
+[[forced]]
+slot = 12
+talk = "ch5_tuck_notice"
+
+# Act one spots.
+[[spot]]
+id = "ch5_searcher"
+name = "格拉布大娘"
+place = "高级律师公会"
+talk = "ch5_searcher"
+cond = "seen:ch5_test and not seen:ch5_anon"
+
+[[spot]]
+id = "ch5_porter"
+name = "门房"
+place = "高级律师公会"
+talk = "ch5_porter"
+cond = "seen:ch5_test and not seen:ch5_anon"
+
+[[spot]]
+id = "ch5_fitch"
+name = "菲奇"
+place = "高级律师公会"
+talk = "ch5_fitch"
+cond = "seen:ch5_test and not seen:ch5_anon"
+once = true
+
+[[spot]]
+id = "ch5_crane"
+name = "克兰"
+place = "德鲁里巷药铺"
+talk = "ch5_crane"
+cond = "seen:ch5_test and not seen:ch5_hearing_one"
+
+# People who stay in reach all chapter.
+[[spot]]
+id = "ch5_rudd"
+name = "拉德大妈"
+place = "迪奥特街酒窖"
+talk = "ch5_rudd"
+cond = "seen:ch5_report and not seen:ch5_hearing_two"
+
+[[spot]]
+id = "ch5_flea"
+name = "跳蚤"
+place = "布罗德街"
+talk = "ch5_flea"
+cond = "seen:ch5_report"
+
+[[spot]]
+id = "ch5_pym"
+name = "皮姆"
+place = "圣吉尔斯法衣室"
+talk = "ch5_pym"
+cond = "seen:ch5_report"
+
+[[spot]]
+id = "ch5_elias"
+name = "以利亚"
+place = "科文特花园"
+talk = "ch5_elias"
+cond = "seen:ch5_report"
+
+[[spot]]
+id = "ch5_madeleine"
+name = "玛德莱娜"
+place = "斯皮塔佛德"
+talk = "ch5_madeleine"
+cond = "seen:ch5_report and not seen:ch5_hearing_two"
+
+[[spot]]
+id = "ch5_john"
+name = "约翰·菲尔丁"
+place = "弓街"
+talk = "ch5_john"
+cond = "seen:ch5_report and not seen:ch5_hearing_two"
+
+[[spot]]
+id = "ch5_home"
+name = "她的屋子"
+place = "教堂巷"
+talk = "ch5_home"
+cond = "seen:ch5_report"
+
+[[spot]]
+id = "ch5_rest"
+name = "歇一歇"
+place = "教堂巷"
+talk = "ch5_rest"
+cond = "seen:ch5_report"
+
+[[spot]]
+id = "ch5_tuck"
+name = "老塔克"
+place = "教堂巷岗亭"
+talk = "ch5_tuck"
+cond = "seen:ch5_tuck_cold"
+
+# Act two spots.
+[[spot]]
+id = "ch5_partner"
+name = "达科斯塔"
+place = "交易巷，乔纳森咖啡馆"
+talk = "ch5_partner"
+cond = "seen:ch5_pereira_home and not seen:ch5_hearing_two"
+
+[[spot]]
+id = "ch5_ned"
+name = "内德"
+place = "老天鹅码头"
+talk = "ch5_ned"
+cond = "flag:ned_alive and seen:ch5_pereira_home and not seen:ch5_hearing_two"
+
+[[spot]]
+id = "ch5_cell"
+name = "佩雷拉"
+place = "弓街后屋"
+talk = "ch5_cell"
+cond = "seen:ch5_hearing_one and not seen:ch5_hearing_two"
+
+# Act three: four roads to Hale, three slots to walk them.
+[[spot]]
+id = "ch5_road_debt"
+name = "威尔的债主"
+place = "弗利特"
+talk = "ch5_road_debt"
+cond = "seen:ch5_hearing_two"
+once = true
+
+[[spot]]
+id = "ch5_road_bond"
+name = "露西的担保书"
+place = "伯利恒"
+talk = "ch5_road_bond"
+cond = "seen:ch5_hearing_two"
+once = true
+
+[[spot]]
+id = "ch5_road_watkins"
+name = "沃特金斯家"
+place = "霍尔本"
+talk = "ch5_road_watkins"
+cond = "seen:ch5_hearing_two"
+once = true
+
+[[spot]]
+id = "ch5_road_sly"
+name = "斯莱"
+place = "弓街一带"
+talk = "ch5_road_sly"
+cond = "seen:ch5_hearing_two"
+once = true

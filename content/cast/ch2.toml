@@ -1,0 +1,9 @@
+# Everyone who speaks in chapter 2, and the condition that silences them for good.
+speakers = [
+  "旁白", "露丝", "老塔克", "鲍尔大娘", "拉德大妈", "基恩太太", "跳蚤", "皮姆", "司事",
+  "玛德莱娜", "勒费弗尔太太", "玛尔特", "布歇太太", "小让", "棣莫弗", "堂倌", "棋友",
+  "以利亚", "莫德", "比利", "二十二位先生", "铜匠", "邻妇",
+]
+
+[mortal]
+"鲍尔大娘" = "flag:bowell_dead"

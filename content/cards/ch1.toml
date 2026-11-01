@@ -1,0 +1,257 @@
+# Chapter 1 cards. Ruth reasons by deduction only here; the verbs arrive one chapter at a time.
+
+[[card]]
+id = "c1_no_spirit"
+kind = "fact"
+title = "没有酒气"
+text = "南的嘴里和衣襟上闻不到一丝酒气。她死在金酒窖里，身上却是干净的。"
+source = "亲眼所见"
+chapter = 1
+tags = ["no_spirit"]
+
+[[card]]
+id = "c1_vomit"
+kind = "fact"
+title = "吐过"
+text = "枕头和衣襟上都是吐过的痕迹，她蜷着，手按在肚子上。"
+source = "亲眼所见"
+chapter = 1
+tags = ["vomit"]
+
+[[card]]
+id = "c1_scar"
+kind = "fact"
+title = "手臂上的圆疤"
+text = "南的左上臂有一枚圆疤，一先令大小，微微下陷，是很多年前的旧疤。"
+source = "亲眼所见"
+chapter = 1
+tags = ["scar"]
+
+[[card]]
+id = "c1_stub"
+kind = "fact"
+title = "衣边里的存根"
+text = "衣边缝着一枚先令和一张存根：“周年赈济，收讫。圣母领报日。南·塔夫利画押。”"
+source = "亲眼所见"
+chapter = 1
+tags = ["stub"]
+
+[[card]]
+id = "c1_bottle"
+kind = "fact"
+title = "枕下的蓝瓶"
+text = "枕下有一只蓝玻璃小瓶，瓶里只剩一点甜液，瓶底积着一层白渣。"
+source = "亲眼所见"
+chapter = 1
+tags = ["bottle"]
+
+[[card]]
+id = "c1_iron_test"
+kind = "fact"
+title = "铁上的白烟"
+text = "瓶底的白渣撒在烧红的火钳上，不起火，冒浓白烟，一股蒜臭，冷铁上结了一层白华。和马医的白砒并排烧，一模一样。"
+source = "亲手试验"
+chapter = 1
+tags = ["garlic_test"]
+
+[[card]]
+id = "c1_rudd_word"
+kind = "testimony"
+title = "她从不喝酒"
+text = "拉德大妈说，南去年听过一回露天布道，从此滴酒不沾，还为床铺和基恩太太吵过架。"
+source = "拉德大妈"
+chapter = 1
+tags = ["never_drank", "quarrel"]
+
+[[card]]
+id = "c1_keane_word"
+kind = "testimony"
+title = "一勺一勺喝的"
+text = "基恩太太说，南每个星期日喝一勺瓶里的补药，这个星期发烧，喝得多。她替南擦过嘴，一点酒气也没有。"
+source = "基恩太太"
+chapter = 1
+tags = ["took_cordial", "no_spirit"]
+
+[[card]]
+id = "c1_old_soldier"
+kind = "testimony"
+title = "发先令的老兵"
+text = "跳蚤说，今年三月底来发先令的是个驼背老兵。往年来的是个手上有墨的人，今年换了。"
+source = "跳蚤"
+chapter = 1
+tags = ["visitor_man"]
+
+[[card]]
+id = "c1_grey_coat"
+kind = "testimony"
+title = "灰外套"
+six = true
+text = "老塔克说，南死前两天，有个穿灰外套、很有礼貌的人在迪奥特街打听她。"
+source = "老塔克"
+chapter = 1
+tags = ["grey_coat"]
+
+[[card]]
+id = "c1_grey_rudd"
+kind = "testimony"
+title = "不用找的六便士"
+text = "拉德大妈说，星期三来过一个穿灰外套的人，要了一杯金酒没喝，给六便士不用找，问了南的身子，隔着门看了她一眼。"
+source = "拉德大妈"
+chapter = 1
+tags = ["grey_coat"]
+
+[[card]]
+id = "c1_rule_spirit"
+kind = "rule"
+title = "醉死者有酒气"
+text = "喝金酒喝死的人，嘴里和身上都有酒气。十回里九回，不是十回十回。"
+source = "鲍尔大娘"
+certainty = "或然"
+chapter = 1
+tags = ["rule_spirit"]
+
+[[card]]
+id = "c1_rule_addington"
+kind = "rule"
+title = "阿丁顿的铁"
+text = "白砒在冷水里大半沉底不化。撒在烧红的铁上不起火，冒浓白烟，有蒜臭，冷铁悬其上结白华。阿丁顿医生试过面粉、石灰、铅白，没有一样是这样。这是他在布兰迪案的证词。"
+source = "《布兰迪案审判记录》"
+certainty = "或然"
+chapter = 1
+tags = ["rule_arsenic"]
+
+[[card]]
+id = "c1_rule_parish"
+kind = "rule"
+title = "各看各的"
+text = "验尸婆只看本教区的死人，只报给本教区的书记。周报上只有数字，没有名字。越过界石，谁也不认识谁。"
+source = "圣马丁的佩格大娘"
+certainty = "或然"
+chapter = 1
+tags = ["rule_parish"]
+
+[[card]]
+id = "c1_not_drunk"
+kind = "inference"
+title = "不是醉死的"
+text = "南身上没有酒气，所以她不是喝金酒喝死的。"
+source = "合成"
+chapter = 1
+
+[[card]]
+id = "c1_arsenic"
+kind = "inference"
+title = "瓶里有砒霜"
+text = "瓶底的白渣在烧红的铁上表现得和白砒一样。"
+source = "合成"
+chapter = 1
+tags = ["arsenic"]
+
+[[card]]
+id = "c1_died_bottle"
+kind = "inference"
+title = "她死于这只瓶子"
+text = "瓶里有砒霜，南一勺一勺喝到了瓶底。"
+source = "合成"
+chapter = 1
+
+[[card]]
+id = "c1_bottom"
+kind = "inference"
+title = "毒都沉在瓶底"
+text = "白砒不化，都积在瓶底。上面的甜液喝不死人，喝到瓶底才要命。"
+source = "合成"
+chapter = 1
+
+[[card]]
+id = "c1_rat"
+kind = "fallacy"
+title = "她吃了鼠药"
+text = "中毒的人上吐下泻，南上吐下泻，酒窖里又有鼠药，所以她吃了鼠药。"
+source = "合成"
+chapter = 1
+
+[[card]]
+id = "c1_keane_did"
+kind = "fallacy"
+title = "基恩太太下的毒"
+text = "瓶里有砒霜，基恩太太和南吵过架，所以是她下的毒。"
+source = "合成"
+chapter = 1
+
+[[card]]
+id = "c1_grey_did"
+kind = "fallacy"
+title = "灰外套下的毒"
+text = "瓶里有砒霜，灰外套又在她死前两天来打听过她，所以是他下的毒。"
+source = "合成"
+chapter = 1
+
+[[recipe]]
+id = "d1_not_drunk"
+verb = "deduce"
+major = "c1_rule_spirit"
+minor = "no_spirit"
+output = "c1_not_drunk"
+form = "若甲则乙；非乙；所以非甲。"
+explain = "醉死的人必有酒气，南没有酒气，所以她不是醉死的。"
+
+[[recipe]]
+id = "d1_arsenic"
+verb = "deduce"
+major = "c1_rule_addington"
+minor = "garlic_test"
+output = "c1_arsenic"
+form = "唯白砒如此；此物如此，且与白砒并排无异；所以此物是白砒。"
+explain = "瓶底白渣的烟、气味和白华，和马医的白砒并排比，和阿丁顿说的一样。"
+
+[[recipe]]
+id = "d1_cause"
+verb = "deduce"
+major = "c1_rule_addington"
+minor = "took_cordial"
+output = "c1_died_bottle"
+form = "白砒喝够了要命；她喝到了瓶底；所以她死于此。"
+explain = "白砒不化，都沉在瓶底。南一勺一勺喝到了瓶底，这就够要她的命。"
+
+[[recipe]]
+id = "d1_bottom"
+verb = "deduce"
+major = "c1_rule_addington"
+minor = "bottle"
+output = "c1_bottom"
+form = "白砒大半沉底不化；瓶底积着白渣；所以上面的甜液喝不死人。"
+explain = "阿丁顿说白砒大半沉底不化。白渣都积在瓶底，所以上面的甜液喝不死人，喝到瓶底才要命。"
+
+[[recipe]]
+id = "f1_spirit"
+verb = "deduce"
+major = "c1_rule_spirit"
+minor = "has_spirit"
+fallacy = "肯定后件"
+fault = "醉死的人有酒气，不等于有酒气的人都醉死了。鲍尔大娘闻过的人里，有酒气又活着的不止一个。"
+output = "c2_bowell_drunk"
+form = "若甲则乙；乙；所以甲。"
+explain = "醉死的人有酒气，鲍尔大娘嘴里酒气冲人，所以她是喝死的。"
+
+[[recipe]]
+id = "f1_keane"
+verb = "deduce"
+major = "c1_arsenic"
+minor = "quarrel"
+fallacy = "相关当因果"
+fault = "吵过架和下毒之间隔着一大截。酒窖里和南吵过架的人不止一个，这件事推不出是谁下的手。"
+output = "c1_keane_did"
+form = "有人下毒；此人与死者有过节；所以此人下毒。"
+explain = "瓶里有砒霜，基恩太太又和南吵过架。"
+
+[[recipe]]
+id = "f1_grey"
+verb = "deduce"
+major = "c1_arsenic"
+minor = "grey_coat"
+fallacy = "相关当因果"
+fault = "他来过，她病了，这是前后脚，推不出谁下的手。没有人看见他碰过瓶子，瓶子是三月就到了南手上的。"
+output = "c1_grey_did"
+form = "有人下毒；此人打听过死者；所以此人下毒。"
+explain = "瓶里有砒霜，灰外套又在星期三来打听过她。"

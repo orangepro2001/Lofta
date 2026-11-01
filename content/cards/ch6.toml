@@ -1,0 +1,245 @@
+# Chapter 6 cards. Sources become evidence here: the source reading retires cards, and replacing a
+# premise lights them again through effects that clear the unproved_ flags.
+
+[[card]]
+id = "c6_orme_list"
+kind = "fact"
+title = "奥姆的名单"
+text = "奥姆医生的种痘名单，二十四个孤儿，页头写“1721 年 3 月”。第十七行：R. 詹姆斯，圣詹姆斯济贫院，女，五岁。"
+source = "斯隆爵士的文稿"
+chapter = 6
+tags = ["orme_list"]
+
+[[card]]
+id = "c6_orme_1722"
+kind = "inference"
+title = "名单是 1722 年的"
+text = "三月二十五才换年。“1721 年 3 月”是 1722 年的春天，在皇家试验之后。她是种过痘的孩子，不会再出痘。"
+source = "合成"
+chapter = 6
+tags = ["inoculated"]
+
+[[card]]
+id = "c6_bottle_clean"
+kind = "fact"
+title = "露西的瓶子"
+text = "露西·马什那只未开封的瓶子，瓶底没有白渣。残液撒在烧红的铁上只有糖焦味，试不出砒霜。"
+source = "亲手试验"
+chapter = 6
+tags = ["bottle_clean"]
+
+[[card]]
+id = "c6_knows_17"
+kind = "inference"
+title = "买股的人知道她在哪"
+text = "买股的人要验明这条命，就得知道她在哪。赫尔买了 17 号，册上的地址是错的。这一年他没有派人来验，也没有寄过瓶子。别的命他都看得牢牢的。"
+source = "合成"
+chapter = 6
+tags = ["knows_17"]
+
+[[card]]
+id = "c6_hale_thomas"
+kind = "inference"
+title = "赫尔就是托马斯"
+text = "知道 17 号是谁、又在乎她的，只有皮姆和托马斯。皮姆读不了反字，他的字也不同。买股、发瓶、留第十一处的，是她的丈夫。"
+source = "合成"
+chapter = 6
+tags = ["hale_thomas"]
+
+[[card]]
+id = "c6_coffin"
+kind = "fact"
+title = "棺内的手"
+text = "圣吉尔斯墓地，托马斯·阿什比的棺内，死者左手缺两指，断口是圆的，长好多年了。托马斯十指俱全。"
+source = "亲眼所见"
+chapter = 6
+tags = ["coffin"]
+
+[[card]]
+id = "c6_harrison"
+kind = "fact"
+title = "锯木工哈里森"
+text = "济贫院死亡簿：1 月第三周，哈里森，锯木工，左手缺二指。全教区葬册查无此人。"
+source = "济贫院死亡簿和教区葬册"
+chapter = 6
+tags = ["no_burial"]
+
+[[card]]
+id = "c6_note_year"
+kind = "inference"
+title = "便条的星期"
+text = "要是星期没有错：他当上访视人以来，3 月 4 日是星期三的年份只有 1741、1747、1752。1741 年他还不认识她，1747 年他的字一笔不抖。便条写于 1752 年，他下葬六周之后。"
+source = "合成"
+chapter = 6
+tags = ["no_burial"]
+
+[[card]]
+id = "c6_alive"
+kind = "inference"
+title = "他没有躺在那口棺材里"
+text = "棺内是别人。托马斯没有死在 1 月。"
+source = "合成"
+chapter = 6
+tags = ["alive"]
+
+[[card]]
+id = "c6_denied"
+kind = "testimony"
+title = "皮姆没说过"
+text = "皮姆从没和守夜人喝过酒，也没对任何人说过长存会的事。他的账本一便士不漏，里面没有这一笔。"
+source = "皮姆和他的账本"
+chapter = 6
+tags = ["denied"]
+
+[[card]]
+id = "c6_sources"
+kind = "inference"
+title = "一个守夜的怎么知道这些"
+text = "六件事里，第 2、4、5、6 件只有基金内部的人才知道。他说是皮姆酒后说的，皮姆没说过。三封信里只丢了内德那一封。他是内部的人，他说的话经过挑选。"
+source = "合成"
+chapter = 6
+tags = ["inside"]
+
+[[card]]
+id = "c6_typeline"
+kind = "fact"
+title = "这个字排错了"
+text = "老塔克把传单拿反了，顺口说“这个字排错了”。守夜的读不到这个程度。"
+source = "记录"
+chapter = 6
+tags = ["reads_type"]
+
+[[card]]
+id = "c6_sleep"
+kind = "fact"
+title = "钟点替你醒着"
+text = "老塔克在岗亭前说过：“睡吧，钟点替你醒着。”这句话她只从一个人嘴里听过，在教堂巷的床上。"
+source = "记录"
+chapter = 6
+tags = ["sleep_line"]
+
+[[card]]
+id = "c6_cobb_depo"
+kind = "testimony"
+title = "科布的供词"
+text = "科布宣誓：7 月底他替爵士去迪奥特街打听过南；安妮和萨姆是他做的；爵士要他赶在 9 月 2 日八日验明之前把事办完。"
+source = "科布"
+chapter = 6
+tags = ["cobb_depo"]
+
+[[card]]
+id = "c6_rotterdam"
+kind = "fact"
+title = "鹿特丹的纸"
+text = "英国人教堂牧师抄来的一行：“星期三，1744/5 年 2 月 10 日，玛丽·阿什比下葬。”"
+source = "鹿特丹英国人教堂"
+chapter = 6
+tags = ["rotterdam"]
+
+[[card]]
+id = "c6_tuck"
+kind = "inference"
+title = "老塔克就是托马斯"
+text = "窗下喊钟点的人读得出反字，知道基金内部的事，说过只属于托马斯的那句话。托马斯没有死。"
+source = "合成"
+chapter = 6
+tags = ["tuck_is_thomas"]
+
+[[card]]
+id = "c6_all_false"
+kind = "fallacy"
+title = "他的话全不算数"
+text = "老塔克是个藏着的人，所以他说过的都不算数，爵士也许根本没有雇科布。"
+source = "合成"
+chapter = 6
+
+[[recipe]]
+id = "d6_year"
+verb = "deduce"
+major = "c3_rule_dual"
+minor = "orme_list"
+output = "c6_orme_1722"
+form = "三月二十五之前仍算上一年；此页写 3 月，且晚于 1721 年 8 月的试验；所以此页是 1722 年。"
+explain = "三月二十五才换年。1721 年 3 月，按一月算年就是 1722 年的春天，王后的孩子种过之后。"
+
+[[recipe]]
+id = "d6_eleventh"
+verb = "deduce"
+major = "c3_rule_eight"
+minor = "ten_list"
+cond = "has:c6_bottle_clean and has:c3_is_17"
+output = "c6_knows_17"
+form = "若甲则乙；甲；所以乙。"
+explain = "八日验明要见人。他买下 17 号，就得知道她在哪，册上那个地址却是错的。这一年他没有派人来验。别的命他都看得牢牢的，威尔和露西都在他手上。他不是找不到她，他是另有安排。"
+
+[[recipe]]
+id = "d6_hale"
+verb = "deduce"
+major = "c6_knows_17"
+minor = "broken_g"
+cond = "flag:ch6_hand or has:c5_hale_letter or has:c4_gale_book"
+output = "c6_hale_thomas"
+form = "只有甲或乙；非甲；所以乙。"
+explain = "知道 17 号是谁、又在乎她的，只有皮姆和托马斯。缺尾的 g 出自排周报的那一小盒字，皮姆读不了反字，他的字也不同。"
+
+[[recipe]]
+id = "d6_alive"
+verb = "deduce"
+major = "c6_coffin"
+minor = "no_burial"
+cond = "has:c6_note_year"
+retires = ["c2_note"]
+output = "c6_alive"
+form = "若甲则乙；非乙；所以非甲。"
+explain = "躺在里面的若是托马斯，就该有十根手指，1 月以后也不会再有他的字。棺内的手缺两指，死亡簿多出一个人，或者便条写在下葬之后。"
+
+[[recipe]]
+id = "r6_source"
+verb = "rebut"
+target_tag = "pym_said"
+counter = "denied"
+cond = "seen:ch6_table"
+retires = ["c1_grey_coat", "c2_lefevre_book", "c3_cobb_knight", "c3_sam_share", "c4_lawyer", "c5_date_talk", "c3_lyle"]
+output = "c6_sources"
+explain = "他说这些是皮姆喝多了说的。皮姆没说过。这些牌不算假，一个藏着的人说的话，要有别人替他作证，在此之前都是待证。"
+
+[[recipe]]
+id = "d6_tuck"
+verb = "deduce"
+major = "c6_sources"
+minor = "sleep_line"
+cond = "has:c6_alive and has:c6_typeline and seen:ch6_lyle_verdict"
+output = "c6_tuck"
+form = "这个人读得出反字，知道基金内情，打得断科布的手臂，说得出这句话；皮姆有十几个人作证；所以多半是他。"
+explain = "他是内部的人，读得出反字，自己也说过碰铅字的手。皮姆 9 月 2 日当夜在法衣室当众清点存活证明，十几人在场。别的排字工没有理由站在她窗下。托马斯没有死。"
+
+[[recipe]]
+id = "f6_all_false"
+verb = "deduce"
+major = "c6_sources"
+minor = "cobb_knight"
+fallacy = "诉诸来源"
+fault = "说话的人藏着，这只要求佐证，推不出他的话是假的。一个骗子说今天是星期三，今天照样可以是星期三。"
+output = "c6_all_false"
+form = "此人不可信；此话出自此人；所以此话为假。"
+explain = "老塔克藏着身份，科布替爵士跑腿是他说的，所以这件事不算数。"
+
+[[recipe]]
+id = "d6_relight_cobb"
+verb = "deduce"
+major = "c3_lyle"
+minor = "cobb_depo"
+cond = "made:r6_source"
+effects = ["clear unproved_c3_lyle", "clear unproved_c3_cobb_knight", "clear unproved_c1_grey_coat", "clear unproved_c4_lawyer"]
+form = "换前提：同一结论，改由宣过誓的证人支撑。"
+explain = "科布宣了誓：迪奥特街是他去的，钱是爵士付的，九月二日是爵士定的限。这几件事不再靠守夜人的嘴。"
+
+[[recipe]]
+id = "d6_relight_book"
+verb = "deduce"
+major = "c2_lefevre_book"
+minor = "society"
+cond = "made:r6_source"
+effects = ["clear unproved_c2_lefevre_book", "clear unproved_c3_sam_share", "clear unproved_c5_date_talk"]
+form = "换前提：同一结论，改由记录支撑。"
+explain = "勒费弗尔太太的账玛德莱娜亲眼见过，萨姆那一股在她抄的册页上，8 月 26 日的争执佩雷拉自己认过，法庭有记录。"

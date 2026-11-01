@@ -1,0 +1,16 @@
+# Chapter 5 speakers. Anyone a player can lose by chapter 4 is mortal here.
+speakers = [
+  "旁白", "露丝", "老塔克", "皮姆", "跳蚤", "克兰", "拉德大妈", "基恩太太",
+  "玛德莱娜", "以利亚", "约翰·菲尔丁", "亨利·菲尔丁", "韦尔奇", "布罗格登",
+  "佩雷拉", "达科斯塔", "斯莱", "爵士的律师", "莱尔爵士", "勒费弗尔太太",
+  "主事律师", "内德", "露西", "威尔", "格拉布大娘", "门房", "菲奇", "酒鬼",
+  "人群", "代理律师", "看守", "管事", "沃特金斯太太",
+]
+
+[mortal]
+"内德" = "flag:ch4_done and not flag:ned_alive"
+"露西" = "flag:ch4_done and not flag:lucy_alive"
+"威尔" = "flag:ch4_done and not flag:will_alive"
+"佩雷拉" = "flag:pereira_hanged"
+"皮姆" = "flag:pym_dead"
+"克兰" = "flag:crane_dead"

@@ -1,0 +1,136 @@
+# Test cards. Kinds: fact, rule, inference, testimony, fallacy.
+[[card]]
+id = "c_demo_no_gin"
+kind = "testimony"
+title = "滴酒不沾"
+text = "街坊说死者从不喝酒。"
+source = "街坊"
+tags = ["never_drank"]
+
+[[card]]
+id = "c_demo_garlic"
+kind = "fact"
+title = "蒜味"
+text = "死者舌根有蒜一样的气味，身上没有酒气。"
+source = "亲眼所见"
+tags = ["no_spirit"]
+
+[[card]]
+id = "c_demo_drunk_rule"
+kind = "rule"
+title = "醉死者必有酒气"
+text = "凡醉死的人，身上都有酒气。"
+source = "经验"
+certainty = "或然"
+
+[[card]]
+id = "c_demo_not_drunk"
+kind = "inference"
+title = "不是醉死"
+text = "死者身上没有酒气，所以她不是醉死的。"
+source = "合成"
+
+[[card]]
+id = "c_demo_bad"
+kind = "fallacy"
+title = "一定是中毒"
+text = "没有酒气，便断定中毒。"
+source = "合成"
+
+[[recipe]]
+id = "d_demo_not_drunk"
+verb = "deduce"
+major = "c_demo_drunk_rule"
+minor = "no_spirit"
+output = "c_demo_not_drunk"
+explain = "大前提：醉死者必有酒气。小前提：死者没有酒气。结论：她不是醉死的。"
+
+[[recipe]]
+id = "d_demo_bad"
+verb = "deduce"
+major = "c_demo_drunk_rule"
+minor = "never_drank"
+fallacy = "否定前件"
+fault = "规律只说醉死的人有酒气，没说不喝酒就不会醉死以外的事。这一步推不出她怎么死的。"
+output = "c_demo_bad"
+explain = "她从不喝酒，所以她一定是中毒。"
+
+[[card]]
+id = "c_demo_case_a"
+kind = "fact"
+title = "第一例"
+text = "第一个死者身上有存根。"
+source = "亲眼所见"
+
+[[card]]
+id = "c_demo_case_b"
+kind = "fact"
+title = "第二例"
+text = "第二个死者身上有存根。"
+source = "亲眼所见"
+
+[[card]]
+id = "c_demo_case_c"
+kind = "fact"
+title = "第三例"
+text = "第三个死者身上有存根。"
+source = "亲眼所见"
+
+[[card]]
+id = "c_demo_case_d"
+kind = "fact"
+title = "反例"
+text = "第四个死者身上没有存根。"
+source = "亲眼所见"
+tags = ["no_stub_demo"]
+
+[[card]]
+id = "c_demo_rule_stub"
+kind = "rule"
+title = "死者都有存根"
+text = "这些死者身上都有存根。"
+source = "合成"
+certainty = "或然"
+
+[[card]]
+id = "c_demo_rule_fixed"
+kind = "rule"
+title = "有的死者没有存根"
+text = "名单上的人在死，别的人也在死。"
+source = "合成"
+certainty = "或然"
+
+[[table]]
+id = "t_demo"
+title = "死者"
+columns = ["存根", "教区"]
+
+[[table.row]]
+card = "c_demo_case_a"
+values = ["有", "甲"]
+
+[[table.row]]
+card = "c_demo_case_b"
+values = ["有", "乙"]
+
+[[table.row]]
+card = "c_demo_case_c"
+values = ["有", "丙"]
+
+[[recipe]]
+id = "i_demo_stub"
+verb = "induce"
+table = "t_demo"
+column = "存根"
+min = 3
+output = "c_demo_rule_stub"
+explain = "三例都有存根。"
+
+[[recipe]]
+id = "r_demo_stub"
+verb = "rebut"
+target = "c_demo_rule_stub"
+counter = "no_stub_demo"
+output = "c_demo_rule_fixed"
+retires = ["c_demo_rule_stub"]
+explain = "规律说都有存根，这一例没有，规律要改。"

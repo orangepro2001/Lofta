@@ -1,0 +1,19 @@
+# Everyone who speaks in chapter 7, and the condition that silences them for good.
+# "查验" and "总账" are the interface speaking; they never die.
+speakers = [
+  "旁白", "露丝", "老塔克", "托马斯", "拉德大妈", "跳蚤", "司事", "霍尔特", "修鞋匠霍奇",
+  "玛德莱娜", "以利亚", "查验", "总账", "约翰·菲尔丁", "韦尔奇", "记录官", "书记官",
+  "皮姆", "克兰", "威尔", "内德", "露西", "佩雷拉", "菲普斯太太", "威克斯太太", "游客", "孩子",
+  "轿夫多兰", "沃特金斯太太", "书记", "书贩", "勒费弗尔太太", "母亲", "年轻女人", "教区执事",
+  "死者的老婆",
+]
+
+[mortal]
+"老塔克" = "flag:thomas_dead"
+"托马斯" = "flag:thomas_dead"
+"皮姆" = "flag:pym_dead"
+"克兰" = "flag:crane_dead"
+"佩雷拉" = "flag:pereira_hanged"
+"内德" = "flag:ch4_done and not flag:ned_alive"
+"露西" = "flag:ch4_done and not flag:lucy_alive"
+"威尔" = "flag:ch4_done and not flag:will_alive"

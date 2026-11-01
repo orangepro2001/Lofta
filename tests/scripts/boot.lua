@@ -1,0 +1,17 @@
+local t = require("testlib")
+
+main.on_new_game(7)
+t.draw()
+local name, code = sys.version()
+t.check(type(name) == "string", "version name is a string")
+t.check(math.type(code) == "integer", "version code is an integer")
+t.check(core.frame_hash() ~= "", "frame hash exists")
+
+local first = core.frame_hash()
+t.ticks(10)
+t.draw()
+t.eq(core.frame_hash(), first, "an idle scene draws the same frame")
+t.eq(core.tick_count(), 10, "ten ticks pass")
+t.eq(core.text_length("露丝·阿什比"), 6, "text length counts codepoints")
+t.check(core.text_width("线索") == 24, "two Chinese glyphs are 24 pixels wide")
+t.eq(core.text_box(0, 0, 60, "一二三四五六七八九十，一二", nil), 3, "thirteen characters at 12 px wrap at 60 px into three lines")

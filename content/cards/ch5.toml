@@ -1,0 +1,208 @@
+# Chapter 5 cards. The new verb is the second layer of the hearing, so most cards here are answers
+# to a question the lawyer has not asked yet.
+
+[[card]]
+id = "c5_clean_wine"
+kind = "fact"
+title = "马德拉酒无毒，药瓶有毒"
+text = "马德拉的酒脚上了红铁，只有焦糖味。床头达菲药酒的瓶底白渣冒浓白烟，蒜臭，勺背结白华。"
+source = "亲手试验"
+chapter = 5
+tags = ["clean_wine"]
+
+[[card]]
+id = "c5_anon_letter"
+kind = "fact"
+title = "印的匿名信"
+text = "寄到弓街，印的，没有落款，告发摩西·佩雷拉。信上每个小写的 g 都缺了尾巴，缺在同一处。"
+source = "弓街的邮件"
+chapter = 5
+tags = ["broken_g"]
+
+[[card]]
+id = "c5_wine_prop"
+kind = "inference"
+title = "酒是摆给人看的"
+text = "酒里没有毒，匿名信却咬定送酒的人。有人要大家都看那瓶酒。"
+source = "合成"
+chapter = 5
+tags = ["wine_prop"]
+
+[[card]]
+id = "c5_sly_oath"
+kind = "testimony"
+title = "斯莱的誓"
+text = "斯莱发誓，9月2日黄昏，星期三，他在高级律师公会门口见过佩雷拉，手里提着一只瓶子。"
+source = "斯莱"
+chapter = 5
+tags = ["sly_oath"]
+
+[[card]]
+id = "c5_sly_trade"
+kind = "testimony"
+title = "吃证人饭的"
+text = "斯莱常年在老贝利门口等活，半克朗一个誓。街上都这么说。"
+source = "街谈"
+chapter = 5
+tags = ["sly_trade"]
+
+[[card]]
+id = "c5_chaplain"
+kind = "fact"
+title = "牧师副署的收据"
+text = "鹿特丹公证人的收据，星期三，9月13日，佩雷拉本人付讫。英国人教堂牧师副署：“此人亲到我面前。日子是真的。”"
+source = "佩雷拉的收据"
+chapter = 5
+tags = ["chaplain"]
+
+[[card]]
+id = "c5_date_talk"
+kind = "testimony"
+title = "英国没有九月十三"
+six = true
+text = "老塔克说：8月26日佩雷拉在盖尔那里吵过。英国的历书上没有九月十三。他说是皮姆先生喝多了讲的。"
+source = "老塔克"
+chapter = 5
+tags = ["date_talk", "pym_said"]
+
+[[card]]
+id = "c5_no_skip"
+kind = "inference"
+title = "星期不跳"
+text = "新式9月13日是星期三，旧式9月2日也是星期三。日子跳了十一个，星期没有跳。收据上那天就是斯莱发誓那天。"
+source = "合成"
+chapter = 5
+tags = ["no_skip"]
+
+[[card]]
+id = "c5_sermon"
+kind = "fact"
+title = "牧师的布道词"
+text = "那位牧师去年印过一本布道词，骂交易巷，骂犹太经纪人，点了佩雷拉公司的名字。"
+source = "牧师的布道词"
+chapter = 5
+tags = ["chaplain_foe"]
+
+[[card]]
+id = "c5_harwich"
+kind = "fact"
+title = "哈里奇的账"
+text = "邮船代办的客账抄本：8月29日，星期六，摩西·佩雷拉，一人，往荷兰。"
+source = "哈里奇邮船账抄本"
+chapter = 5
+tags = ["harwich"]
+
+[[card]]
+id = "c5_master"
+kind = "testimony"
+title = "海上没有第二条路"
+text = "常跑哈里奇的船主约伯说，大风之后小船都在修，9月2日以前从荷兰回来的只有两条船，他都认得，都没有带客。"
+source = "内德和船主约伯"
+chapter = 5
+tags = ["second_way"]
+
+[[card]]
+id = "c5_dutch_letter"
+kind = "testimony"
+title = "鹿特丹来的信"
+text = "玛德莱娜在鹿特丹的通信人写道：9月11日星期一，她舅舅的铺子里来了一位佩雷拉先生，打听多德雷赫特的纸。"
+source = "玛德莱娜的荷兰通信"
+chapter = 5
+tags = ["second_way"]
+
+[[card]]
+id = "c5_hale_letter"
+kind = "fact"
+title = "写给威尔的信"
+text = "手写，末尾两个字母：S.H.，“你冬天别睡靠墙的铺位。费用我付。你不必知道我是谁，我知道你是谁。”每个小写的 g 都缺了尾巴。"
+source = "威尔·佩林"
+chapter = 5
+tags = ["hale_letter"]
+
+[[card]]
+id = "c5_trust"
+kind = "fact"
+title = "信托文书"
+text = "赫尔三股“专供本册 17 号之命本人单独使用，不受任何丈夫支配”。她死后归创始慈善学校。附一张印的短信：“此款宜用于穷孩子种痘。”"
+source = "启封的文书"
+chapter = 5
+tags = ["trust"]
+
+[[card]]
+id = "c5_no_such_day"
+kind = "fallacy"
+title = "这张收据作不得数"
+text = "英国的历书上没有九月十三，英国的法庭只认英国的日子，所以收据上的日子作不得数。"
+source = "合成"
+chapter = 5
+tags = ["no_such_day"]
+
+[[card]]
+id = "c5_sly_lies"
+kind = "fallacy"
+title = "他说的都是假的"
+text = "斯莱是吃证人饭的，发过几十回誓，所以他这回说的是假话。"
+source = "合成"
+chapter = 5
+tags = ["sly_lies"]
+
+[[card]]
+id = "c5_sender_clear"
+kind = "fallacy"
+title = "送酒的人没有杀人"
+text = "酒是干净的，所以送酒的人没有下毒。药瓶是谁换的，这句话碰不到。"
+source = "合成"
+chapter = 5
+tags = ["sender_clear"]
+
+[[recipe]]
+id = "f5_wine"
+verb = "deduce"
+major = "c5_clean_wine"
+minor = "sly_oath"
+fallacy = "否定前件"
+fault = "酒里没有毒，只说明他没有用这瓶酒杀人。药瓶是谁换的，这一步碰不到。"
+output = "c5_sender_clear"
+form = "若甲则乙；非乙；所以非甲。"
+explain = "若他在酒里下毒，这瓶酒就有毒；这瓶酒没有毒；所以他没有下毒。"
+
+[[recipe]]
+id = "d5_wine_prop"
+verb = "deduce"
+major = "c5_clean_wine"
+minor = "broken_g"
+output = "c5_wine_prop"
+form = "此物无毒；告发的人咬定此物；所以告发的人指的不是毒的来路。"
+explain = "酒是干净的，信却咬定送酒的人。写信的人要么不知道，要么就是要大家看酒。"
+
+[[recipe]]
+id = "d5_no_skip"
+verb = "deduce"
+major = "c3_rule_ns"
+minor = "chaplain"
+cond = "flag:ch5_week_checked"
+output = "c5_no_skip"
+form = "新式等于旧式加十一日；此纸写新式某日星期三；旧式减十一日也是星期三；所以是同一天。"
+explain = "《历书》上两个星期三对得上。议会删了日子，没有删星期。"
+
+[[recipe]]
+id = "f5_no_day"
+verb = "deduce"
+major = "c5_date_talk"
+minor = "chaplain"
+fallacy = "此地当各地"
+fault = "英国没有这一天，是英国的规矩。写这张纸的人站在鹿特丹，那里有这一天。拿此地的历书量彼地的纸，量出来的只是此地。"
+output = "c5_no_such_day"
+form = "此地没有这一天；彼处的纸写着这一天；所以彼处的纸不算数。"
+explain = "英国的历书上没有九月十三，英国的法庭只认英国的日子。"
+
+[[recipe]]
+id = "f5_sly_lies"
+verb = "deduce"
+major = "c5_sly_oath"
+minor = "sly_trade"
+fallacy = "诉诸来源"
+fault = "不能因来源否定结论，只能因来源要求佐证。吃证人饭的人也可能说真话，要拿别的东西把他钉住。"
+output = "c5_sly_lies"
+form = "此人以此为业；所以此人此言为假。"
+explain = "他靠发誓吃饭，这回发的誓也不能信。"

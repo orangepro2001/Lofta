@@ -1,0 +1,28 @@
+#include <windows.h>
+
+CREATEPROCESS_MANIFEST_RESOURCE_ID RT_MANIFEST "lofta.manifest"
+1 ICON "../../../build/lofta.ico"
+
+VS_VERSION_INFO VERSIONINFO
+FILEVERSION VER_MAJOR,VER_MINOR,VER_PATCH,0
+PRODUCTVERSION VER_MAJOR,VER_MINOR,VER_PATCH,0
+FILEOS VOS_NT_WINDOWS32
+FILETYPE VFT_APP
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "FileDescription", "The Eleven Lost Days"
+            VALUE "FileVersion", VER_TEXT
+            VALUE "InternalName", "Lofta"
+            VALUE "OriginalFilename", "Lofta.exe"
+            VALUE "ProductName", "The Eleven Lost Days"
+            VALUE "ProductVersion", VER_TEXT
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x0409, 1200
+    END
+END

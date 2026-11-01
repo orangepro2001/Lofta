@@ -1,0 +1,346 @@
+n = 6
+title = "老贝利"
+dates = "1752年10月2日至12月11日"
+slots = 16
+start = "ch6_open"
+climax = "ch6_kiosk"
+required = ["c6_rotterdam"]
+
+# Scenes that follow a conclusion the player reaches on the board.
+[[forced]]
+slot = 0
+talk = "ch6_door"
+cond = "has:c6_orme_1722"
+
+[[forced]]
+slot = 0
+talk = "ch6_cared"
+cond = "has:c6_knows_17"
+
+[[forced]]
+slot = 0
+talk = "ch6_hale_beat"
+cond = "has:c6_hale_thomas and not seen:ch6_pym_talk"
+
+[[forced]]
+slot = 0
+talk = "ch6_alive_beat"
+cond = "has:c6_alive"
+
+[[forced]]
+slot = 0
+talk = "ch6_grey"
+cond = "made:r6_source"
+
+[[forced]]
+slot = 0
+talk = "ch6_knows"
+cond = "has:c6_tuck"
+
+[[forced]]
+slot = 0
+talk = "ch6_after_coffin"
+cond = "has:c6_coffin"
+
+# Act one. The whole chain at slot 4 runs in one pass, in this order.
+[[forced]]
+slot = 1
+talk = "ch6_flea_penny"
+
+[[forced]]
+slot = 2
+talk = "ch6_trial_near"
+cond = "flag:pereira_committed and not flag:pereira_cleared"
+
+[[forced]]
+slot = 4
+talk = "ch6_trial"
+cond = "flag:pereira_committed and not flag:pereira_cleared"
+
+[[forced]]
+slot = 4
+talk = "ch6_win_dinner"
+cond = "flag:pereira_cleared and not seen:ch6_trial"
+
+[[forced]]
+slot = 4
+talk = "ch6_exam"
+
+[[forced]]
+slot = 4
+talk = "ch6_sailor"
+
+[[forced]]
+slot = 4
+talk = "ch6_tyburn"
+cond = "flag:pereira_hanged"
+
+[[forced]]
+slot = 4
+talk = "ch6_break"
+cond = "flag:pereira_hanged"
+
+[[forced]]
+slot = 4
+talk = "ch6_bread"
+
+[[forced]]
+slot = 4
+talk = "ch6_struck_off"
+
+# Act two.
+[[forced]]
+slot = 7
+talk = "ch6_door_clean"
+
+[[forced]]
+slot = 7
+talk = "ch6_warning"
+
+[[forced]]
+slot = 8
+talk = "ch6_rotterdam"
+
+[[forced]]
+slot = 9
+talk = "ch6_the_night"
+
+[[forced]]
+slot = 9
+talk = "ch6_stitch"
+
+[[forced]]
+slot = 9
+talk = "ch6_after_night"
+
+# Act three.
+[[forced]]
+slot = 11
+talk = "ch6_dec_open"
+
+[[forced]]
+slot = 14
+talk = "ch6_lyle_trial"
+
+[[forced]]
+slot = 14
+talk = "ch6_ballad"
+
+[[forced]]
+slot = 16
+talk = "ch6_pym_tells"
+cond = "flag:pym_spoke and not has:c6_alive"
+
+[[forced]]
+slot = 16
+talk = "ch6_lyle_hangs"
+
+# Everyone close enough to talk to for nothing.
+[[spot]]
+id = "ch6_elias"
+name = "以利亚"
+place = "教堂巷，她的房间"
+talk = "ch6_elias"
+
+[[spot]]
+id = "ch6_madeleine"
+name = "玛德莱娜"
+place = "教堂巷，她的房间"
+talk = "ch6_madeleine"
+cond = "not flag:pereira_hanged"
+
+[[spot]]
+id = "ch6_flea"
+name = "跳蚤"
+place = "教堂巷"
+talk = "ch6_flea"
+
+[[spot]]
+id = "ch6_tuck"
+name = "老塔克"
+place = "教堂巷岗亭"
+talk = "ch6_tuck"
+cond = "not has:c6_tuck and not seen:ch6_lyle_trial"
+
+[[spot]]
+id = "ch6_pym"
+name = "皮姆"
+place = "圣吉尔斯法衣室"
+talk = "ch6_pym"
+cond = "not flag:pym_dead"
+
+[[spot]]
+id = "ch6_pym_ledger"
+name = "皮姆的账本"
+place = "圣吉尔斯法衣室"
+talk = "ch6_pym_ledger"
+cond = "flag:pym_dead and seen:ch6_table"
+once = true
+
+[[spot]]
+id = "ch6_rudd"
+name = "拉德大妈"
+place = "迪奥特街酒窖"
+talk = "ch6_rudd"
+
+[[spot]]
+id = "ch6_keane"
+name = "基恩太太"
+place = "迪奥特街酒窖"
+talk = "ch6_keane"
+
+[[spot]]
+id = "ch6_books"
+name = "书贩"
+place = "七日晷"
+talk = "ch6_books"
+
+[[spot]]
+id = "ch6_gale_read"
+name = "盖尔的札记"
+place = "她的房间"
+talk = "ch6_gale_read"
+cond = "has:c4_gale_book"
+once = true
+
+[[spot]]
+id = "ch6_kitty"
+name = "巴斯来的信"
+place = "她的房间"
+talk = "ch6_kitty"
+cond = "flag:kitty_alive"
+once = true
+
+[[spot]]
+id = "ch6_stone"
+name = "穷人坑边的墙根"
+place = "圣吉尔斯墓地"
+talk = "ch6_stone"
+cond = "flag:hannah_stone_told and flag:ch6_act2"
+once = true
+
+[[spot]]
+id = "ch6_workhouse"
+name = "济贫院的死亡簿"
+place = "圣吉尔斯济贫院"
+talk = "ch6_workhouse"
+cond = "has:c6_coffin"
+once = true
+
+[[spot]]
+id = "ch6_note_again"
+name = "再看一遍便条"
+place = "她的房间"
+talk = "ch6_note_again"
+cond = "has:c6_coffin and has:c2_note"
+once = true
+
+[[spot]]
+id = "ch6_strike"
+name = "把他说过的话想回来"
+place = "她的房间"
+talk = "ch6_strike"
+cond = "seen:ch6_table"
+
+# Across town.
+[[spot]]
+id = "ch6_john"
+name = "弓街（花一个时段）"
+place = "弓街"
+talk = "ch6_john"
+
+[[spot]]
+id = "ch6_newgate"
+name = "去纽盖特看佩雷拉（花一个时段）"
+place = "纽盖特"
+talk = "ch6_newgate"
+cond = "flag:pereira_committed and not flag:pereira_cleared and not flag:ch6_act2"
+once = true
+
+[[spot]]
+id = "ch6_ship"
+name = "替他找海上的证人（花一个时段）"
+place = "老天鹅码头"
+talk = "ch6_ship"
+cond = "flag:pereira_committed and not flag:pereira_cleared and not flag:ch6_act2"
+once = true
+
+[[spot]]
+id = "ch6_pereira"
+name = "贝维斯马克斯（花一个时段）"
+place = "贝维斯马克斯"
+talk = "ch6_pereira"
+cond = "flag:pereira_cleared"
+once = true
+
+[[spot]]
+id = "ch6_ned"
+name = "老天鹅码头（花一个时段）"
+place = "老天鹅码头"
+talk = "ch6_ned"
+cond = "flag:ned_alive"
+once = true
+
+[[spot]]
+id = "ch6_will"
+name = "弗利特监狱（花一个时段）"
+place = "弗利特"
+talk = "ch6_will"
+cond = "flag:will_alive"
+once = true
+
+[[spot]]
+id = "ch6_chelsea"
+name = "切尔西（花一个时段）"
+place = "切尔西"
+talk = "ch6_chelsea"
+cond = "flag:ch6_act2"
+once = true
+
+[[spot]]
+id = "ch6_bethlem"
+name = "伯利恒药房（花一个时段）"
+place = "摩尔菲尔德"
+talk = "ch6_bethlem"
+cond = "flag:ch6_act2"
+once = true
+
+[[spot]]
+id = "ch6_g_line"
+name = "沿着缺尾的 g 找（花一个时段）"
+place = "银街"
+talk = "ch6_g_line"
+cond = "flag:ch6_act2 and has:c5_anon_letter"
+once = true
+
+[[spot]]
+id = "ch6_holt"
+name = "红十字街的酒馆（花一个时段）"
+place = "红十字街"
+talk = "ch6_holt"
+cond = "flag:ch6_holt_named and not flag:holt_found"
+once = true
+
+[[spot]]
+id = "ch6_lyle_visit"
+name = "去纽盖特见爵士（花一个时段）"
+place = "纽盖特"
+talk = "ch6_lyle_visit"
+cond = "flag:ch6_act2 and not seen:ch6_lyle_trial"
+once = true
+
+[[spot]]
+id = "ch6_coffin"
+name = "半夜去墓地（花一个时段）"
+place = "圣吉尔斯墓地"
+talk = "ch6_coffin"
+cond = "flag:ch6_act3"
+once = true
+
+[[spot]]
+id = "ch6_table"
+name = "把牌摊开，只看来源（花一个时段）"
+place = "她的房间"
+talk = "ch6_table"
+cond = "flag:ch6_act3"
+once = true

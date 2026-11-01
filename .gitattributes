@@ -1,0 +1,15 @@
+# Vendored dependencies stay byte-identical to upstream: no line-ending or encoding rewriting.
+third_party/** -text
+
+# Binaries and fonts.
+*.a binary
+*.bdf binary
+*.ttf binary
+*.otf binary
+*.png binary
+*.ico binary
+*.exe binary
+
+# The build scripts themselves.
+tools/*.sh text eol=lf
+tools/*.ps1 text eol=crlf

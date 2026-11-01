@@ -1,0 +1,282 @@
+# Chapter 2 cards. Ruth learns to read a table, and Bowell's body teaches her what a table is worth.
+
+[[card]]
+id = "c2_bess"
+kind = "fact"
+title = "贝丝一例"
+text = "科文特花园水果贩贝丝·凯特尔，35 岁，6月11日，星期四死，记“热病”。左上臂有圆疤，留着先令存根和一只蓝瓶。"
+source = "贝丝的遗物"
+chapter = 2
+tags = ["case_dead"]
+
+[[card]]
+id = "c2_jonas"
+kind = "fact"
+title = "乔纳斯一例"
+text = "斯皮塔佛德织工乔纳斯·里德，33 岁，8月9日，星期日死，当地报“绞肠”。左上臂有圆疤，诗篇里夹着一沓存根，枕下有蓝瓶。"
+source = "亲眼所见"
+chapter = 2
+tags = ["case_dead"]
+
+[[card]]
+id = "c2_bowell_body"
+kind = "fact"
+title = "鲍尔大娘的尸首"
+text = "吐过，渴过，手按在肚子上，和南一样。嘴里酒气冲人，邻妇说这回可是真喝死的。两臂都没有圆疤，衣边没有存根，枕下没有蓝瓶。"
+source = "亲手查验"
+chapter = 2
+tags = ["no_stub", "has_spirit"]
+
+[[card]]
+id = "c2_bowell_drunk"
+kind = "fallacy"
+title = "鲍尔是喝死的"
+text = "鲍尔大娘嘴里酒气冲人，醉死的人都有酒气，所以她是喝死的。"
+source = "合成"
+chapter = 2
+
+[[card]]
+id = "c2_rule_list"
+kind = "rule"
+title = "同一份名单"
+text = "凡这样死的，都在同一份名单上。"
+source = "案例表"
+certainty = "或然"
+chapter = 2
+tags = ["on_list"]
+
+[[card]]
+id = "c2_rule_bottle"
+kind = "rule"
+title = "都死于蓝瓶"
+text = "名单上的人死，都死于蓝瓶。"
+source = "案例表"
+certainty = "或然"
+chapter = 2
+
+[[card]]
+id = "c2_rule_bet"
+kind = "rule"
+title = "下了注的命"
+text = "有人年年要收据证明一条命还活着，就有人在这条命上下了注。"
+source = "棣莫弗"
+certainty = "或然"
+chapter = 2
+
+[[card]]
+id = "c2_rule_pox"
+kind = "rule"
+title = "人痘疤"
+text = "这种圆疤是人痘疤。左上臂，一先令大小，微微下陷。"
+source = "以利亚"
+certainty = "或然"
+chapter = 2
+
+[[card]]
+id = "c2_rule_silence"
+kind = "rule"
+title = "知道内情的人也在死"
+text = "名单上的人在死，鲍尔也死了。她知道点什么。"
+source = "反驳"
+certainty = "或然"
+chapter = 2
+
+[[card]]
+id = "c2_note"
+kind = "fact"
+title = "封底里的便条"
+text = "“星期三，1750/1 年 3 月 4 日。你手里那些先令不是情话。留好。到了日子，会有人来找你。”托马斯的字，字迹发抖。"
+source = "托马斯的便条"
+chapter = 2
+tags = ["note_date"]
+
+[[card]]
+id = "c2_lefevre_book"
+kind = "testimony"
+title = "不给人看的账"
+six = true
+text = "老塔克说，斯皮塔佛德的勒费弗尔太太有一本不给人看的账。他说是皮姆先生喝多了讲的。"
+source = "老塔克"
+chapter = 2
+tags = ["pym_said"]
+
+[[card]]
+id = "c2_society"
+kind = "fact"
+title = "友爱长存会"
+text = "勒费弗尔太太的黑皮账：友爱长存会，1722年9月10日立约，三十年。第14股，命：乔纳斯·里德。第15股，命：安妮·普鲁伊特，7月2日，跌落。"
+source = "勒费弗尔太太的账本"
+chapter = 2
+tags = ["society"]
+
+[[card]]
+id = "c2_scar_all"
+kind = "rule"
+title = "同样的圆疤"
+text = "这些死者的左上臂都有同样的圆疤。"
+source = "案例表"
+certainty = "或然"
+chapter = 2
+tags = ["scar"]
+
+[[card]]
+id = "c2_inoculated"
+kind = "inference"
+title = "小时候种过痘"
+text = "这些穷人小时候种过人痘。那时候种一个要好几镑，有人替他们付了钱。"
+source = "合成"
+chapter = 2
+
+[[card]]
+id = "c2_stake"
+kind = "inference"
+title = "名单是一张赌注"
+text = "名单上的人年年有人付钱，所以这些命上都有人下了注。"
+source = "合成"
+chapter = 2
+
+[[card]]
+id = "c2_only_list"
+kind = "inference"
+title = "名单以外的人不用怕"
+text = "这样死的都在名单上，存根是名单的记号。没有存根的人不会这样死。"
+source = "合成"
+chapter = 2
+
+[[card]]
+id = "c2_bowell_word"
+kind = "testimony"
+title = "有人托的话"
+text = "鲍尔大娘说，南的事是有人托话叫她盖上的，别让露丝较真。她不肯说是谁。"
+source = "鲍尔大娘"
+chapter = 2
+
+[[card]]
+id = "c2_label"
+kind = "fact"
+title = "印的标签"
+text = "酒瓶底的白渣在烧红的铁上冒白烟，有蒜臭。瓶上的标签是印的：“圣吉尔斯教区敬赠验尸婆玛杰里·鲍尔，以酬五十年辛劳。”字排得很匀。"
+source = "亲手试验"
+chapter = 2
+tags = ["label"]
+
+[[card]]
+id = "c2_door"
+kind = "testimony"
+title = "法衣室门口"
+text = "扫台阶的比利说，那瓶酒星期三天没亮就放在法衣室门口，瓶颈系着一便士和一张印的条子。没有人见过放瓶子的人。"
+source = "比利"
+chapter = 2
+tags = ["door"]
+
+[[card]]
+id = "c2_age"
+kind = "fallacy"
+title = "三十多岁的人在死"
+text = "这三个人都三十多岁，所以是这个岁数招来了这种死。"
+source = "案例表"
+chapter = 2
+
+[[table]]
+id = "t2_dead"
+title = "这些死者"
+columns = ["圆疤", "先令存根", "喝到瓶底", "三十多岁", "看尸的教区"]
+
+[[table.row]]
+card = "c1_stub"
+label = "南"
+values = ["有", "有", "有", "是", "圣吉尔斯"]
+
+[[table.row]]
+card = "c2_bess"
+label = "贝丝"
+values = ["有", "有", "有", "是", "圣保罗"]
+
+[[table.row]]
+card = "c2_jonas"
+label = "乔纳斯"
+values = ["有", "有", "有", "是", "基督堂"]
+
+[[recipe]]
+id = "i2_list"
+verb = "induce"
+table = "t2_dead"
+column = "先令存根"
+min = 3
+cond = "flag:ch2_table"
+output = "c2_rule_list"
+explain = "三个人，三个教区，手里是同一张印的存根。凡这样死的，都在同一份名单上。"
+
+[[recipe]]
+id = "i2_bottle"
+verb = "induce"
+table = "t2_dead"
+column = "喝到瓶底"
+min = 3
+cond = "flag:ch2_table"
+output = "c2_rule_bottle"
+explain = "三个人都喝到了瓶底。基恩太太喝过一勺，好好的。量上去才死。"
+
+[[recipe]]
+id = "i2_scar"
+verb = "induce"
+table = "t2_dead"
+column = "圆疤"
+min = 3
+cond = "flag:ch2_table"
+output = "c2_scar_all"
+explain = "三个人的左上臂都有一枚圆疤，大小都一样。"
+
+[[recipe]]
+id = "f2_age"
+verb = "induce"
+table = "t2_dead"
+column = "三十多岁"
+min = 3
+cond = "flag:ch2_table"
+fallacy = "相关当因果"
+fault = "同时出现的东西不一定有因果。年纪不杀人，一年死在这个岁数的有一千八百人，死法各不相同。这三行同岁，要去问挑人的人。喝到瓶底那一列有铁上的白烟撑着，这一列什么也没有。"
+output = "c2_age"
+explain = "三个人都三十多岁。"
+
+[[recipe]]
+id = "d2_pox"
+verb = "deduce"
+major = "c2_rule_pox"
+minor = "scar"
+output = "c2_inoculated"
+form = "凡此疤皆人痘；此人有此疤；所以此人种过人痘。"
+explain = "这种圆疤是人痘疤，这些穷人身上有。三十年前种一个要好几镑，有人替他们付了钱。"
+
+[[recipe]]
+id = "d2_stake"
+verb = "deduce"
+major = "c2_rule_bet"
+minor = "on_list"
+output = "c2_stake"
+form = "若有人年年要收据证明一条命还活着，就有人在这条命上下注；名单上的命年年有人收据；所以这些命上都有人下注。"
+explain = "存根是年年的一先令。名单上的命都年年要收据，所以都有人下了注。"
+
+[[recipe]]
+id = "d2_only"
+verb = "deduce"
+major = "c2_rule_list"
+minor = "stub"
+output = "c2_only_list"
+form = "凡这样死的都在名单上；存根是名单的记号；所以没有存根的人不会这样死。"
+explain = "这一步走得没有错。它有多牢靠，要看前提有多牢靠。"
+
+[[recipe]]
+id = "r2_silence"
+verb = "rebut"
+target = "c2_rule_list"
+counter = "no_stub"
+cond = "has:c2_label"
+output = "c2_rule_silence"
+retires = ["c2_only_list", "c2_stake"]
+rewrites = [
+  "名单上的人在死，鲍尔也死了。她知道点什么。",
+  "这样死的都在名单上，只是鲍尔的存根丢了。",
+  "鲍尔是真的喝死的，这一行不算。",
+]
+explain = "规律说这样死的都在名单上。鲍尔这样死了，手臂上没有疤，衣边没有存根，枕下没有瓶。规律要改。"

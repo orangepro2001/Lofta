@@ -1,0 +1,15 @@
+# Everyone who speaks in chapter 4, and the condition that silences them for good.
+speakers = [
+  "旁白", "露丝", "老塔克", "皮姆", "跳蚤", "基恩太太", "拉德大妈", "醉汉",
+  "修鞋匠霍奇", "菲普斯太太", "将军",
+  "约翰·菲尔丁", "亨利·菲尔丁", "韦尔奇", "玛德莱娜", "勒费弗尔太太", "以利亚", "基蒂",
+  "渡工", "奥克斯太太", "门房", "莫莉", "看护", "看守", "露西", "威尔", "内德", "科布", "盖尔", "菲奇",
+  "老板", "酒客", "老板娘", "船夫", "欠债人", "老律师", "新郎", "牧师", "鱼贩", "学徒",
+  "主妇", "女仆", "男孩", "母亲", "二十二位先生", "书记布罗格登",
+]
+
+[mortal]
+"盖尔" = "flag:gale_dead"
+"露西" = "flag:ch4_done and not flag:lucy_alive"
+"威尔" = "flag:ch4_done and not flag:will_alive"
+"内德" = "flag:ch4_done and not flag:ned_alive"

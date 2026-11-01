@@ -1,0 +1,169 @@
+# Chapter 7 last act. Real 1752 figures from history-notes.md; the marks depend on the player.
+# fund reads pereira_hanged, so ch7_reckon sets it for one line to price the lives she saved.
+
+=== ch7_finale
+旁白: 1753年1月。
+旁白: 1752年才第一次从1月1日开始，中间还少了十一天。
+旁白: 这是第一个完整走完新式的年头。
+旁白: 1月5日这天是星期五，旧圣诞节。布里斯托尔的集市几乎没有人。
+旁白: 报上说，人们去看圣荆棘开不开花。格拉斯顿伯里那棵圣诞夜没开，这天开了。
+旁白: 白金汉郡两千多人提着灯看一棵黑刺李。它没开，他们不肯上教堂。
+旁白: 1月11日这天是星期四。汉斯·斯隆爵士死在切尔西，九十二岁。
+旁白: 老贝利同一天开庭。
+旁白: 1752年总账。1751年12月10日至1752年12月12日。
+总账: 洗礼15,308。下葬20,485。比上年少543人。
+旁白: 有位署名 P. 的先生写信给杂志：今年短了日子，按比例补上，只少24人。
+总账: 抽搐5,431。痨病3,558。
+总账: 天花3,538。
+if flag:exhumed
+  旁白: 其中一行写的是托马斯·阿什比。棺材里是锯木工哈里森。
+else
+  旁白: 其中一行写的是托马斯·阿什比。
+end
+总账: 老死1,263。
+总账: 溺水98。
+旁白: 其中一行是萨姆·奥克斯。
+if not flag:ned_alive
+  旁白: 还有一行是内德·霍布斯。那一夜她去了别处。
+end
+总账: 跌落等意外53。
+旁白: 其中一行是安妮·普鲁伊特。
+if not flag:will_alive
+  旁白: 还有一行是威尔·佩林。那一夜她去了别处。
+end
+总账: 自杀44。发现已死22。
+if not flag:ch1_bill_true and not flag:ch1_took_groat
+  if flag:ch1_verdict_poison
+    旁白: 其中一行是南·塔夫利。她写的是中毒，账上改了这个。
+  else
+    旁白: 其中一行是南·塔夫利。她写的。
+  end
+end
+总账: 饮酒过量10。
+if flag:ch1_took_groat
+  旁白: 其中一行是南·塔夫利。她写的。两个格罗特。
+elif flag:ch1_bill_true
+  旁白: 其中一行是玛杰里·鲍尔。她报的是中毒，皮姆压了下来。
+end
+总账: 谋杀6。
+总账: 中毒1。
+if flag:ch1_bill_true
+  旁白: 这一行是她写的。南·塔夫利。8月4日，星期二。
+else
+  旁白: 这一行是她写的。玛杰里·鲍尔。8月13日，星期四。
+end
+-> ch7_fates
+
+=== ch7_fates
+if flag:kitty_alive
+  旁白: 基蒂·夏普从巴斯回到德鲁里巷，台词比去年少，工钱也少。她说够了。
+else
+  旁白: 基蒂·夏普的戏服，戏班卖了三先令。
+end
+if flag:ned_alive
+  旁白: 内德·霍布斯还在老天鹅码头摆渡。狗的木牌他重新刷了漆。
+else
+  旁白: 老天鹅码头那块狗的木牌还在，没有人刷漆。
+end
+if flag:lucy_alive
+  旁白: 露西·马什还在伯利恒，还唱那首童谣。有时候唱到一半，她问今天星期几。
+elif flag:bottles_tested
+  旁白: 露西·马什走了，那首童谣伯利恒没有人会唱了。
+else
+  旁白: 露西·马什的瓶子还在院方药房。那首童谣伯利恒没有人会唱了。
+end
+if flag:will_alive
+  旁白: 威尔·佩林在弗利特的墙上画了两本日历，说这样能多活十一天。
+else
+  旁白: 威尔·佩林的债算到他死那天，按新式。
+end
+if flag:pereira_hanged
+  旁白: 佩雷拉11月1日，星期三，绞死。贝维斯马克斯的人等到天黑，领回去的不全。
+else
+  旁白: 佩雷拉回到交易巷。他的公司又换了一回查票的纸样。
+end
+if flag:crane_taken
+  旁白: 克兰在1月庭供出十三瓶，换了流放，十四年。他上船时还在擦手指。
+else
+  旁白: 克兰的铺子换了招牌。那封“配错药”的认罪书还在验尸官的箱子里。
+end
+if flag:pym_spoke
+  旁白: 皮姆辞了书记。新来的年轻人不留茶。
+elif flag:pym_dead
+  旁白: 皮姆的杯子还在法衣室架子上，里面有一圈茶渍。
+else
+  旁白: 皮姆还在写周账，再没有抬头看过她。
+end
+if flag:pereira_hanged
+  旁白: 玛德莱娜再也没有回她的信。《女士日记》登了她的解答，署名 M.L.。
+else
+  旁白: 玛德莱娜在《女士日记》登了一道题：三股分账。没有人解对。
+end
+if flag:bottles_tested
+  旁白: 以利亚考进了外科医师公会。露西那只瓶子他留着，放在标本柜第二层。
+else
+  旁白: 以利亚考进了外科医师公会。他开玩笑比从前少了。
+end
+旁白: 跳蚤十二岁了，火把涨到两便士。他说这是新式的价钱。
+if flag:ch1_blamed_keane
+  旁白: 基恩太太在牢里关过一夜，铺盖扔在街上。她和露丝隔着半只盆，什么也不提。
+else
+  旁白: 基恩太太占了南靠墙那块地方。星期日她替南念一遍经。
+end
+旁白: 拉德大妈12月25日收一回圣诞酒钱，1月5日又收一回。两边的上帝都不得罪。
+-> ch7_reckon
+
+=== ch7_reckon
+~ fund
+旁白: 决算。三万一千镑。
+if var:end_id==1 or var:end_id==2 or var:end_id==8
+  旁白: 按文书她该得{fund_ruth}镑。三股已退回三家。
+else
+  旁白: 她名下{fund_shares}股，全部{fund_total}股，账面{fund_ruth}镑。
+end
+if flag:pereira_hanged
+  旁白: 佩雷拉名下两股已作废。这一行没有差额。
+elif flag:kitty_alive or flag:ned_alive
+  ~ flag pereira_hanged
+  ~ fund
+  if flag:kitty_alive and flag:ned_alive
+    旁白: 基蒂和内德要是没有活下来，这个数是{fund_ruth}镑。
+  elif flag:kitty_alive
+    旁白: 基蒂要是没有活下来，这个数是{fund_ruth}镑。
+  else
+    旁白: 内德要是没有活下来，这个数是{fund_ruth}镑。
+  end
+  ~ clear pereira_hanged
+  ~ fund
+  if var:end_id==1 or var:end_id==2 or var:end_id==8
+    旁白: 这一截本来也是她的。她一便士也没有。
+  else
+    旁白: 中间这一截，是她从自己账上划掉的。
+  end
+else
+  旁白: 佩雷拉名下的命她一条也没有救下。这一行没有差额。
+end
+if flag:thomas_dead
+  旁白: 教堂巷的岗亭换了人。
+else
+  旁白: 教堂巷的岗亭里，灯还亮着。
+end
+总账: 惊吓0。
+总账: 悲伤4。
+if var:end_id==1
+  ~ ending a
+elif var:end_id==2
+  ~ ending b
+elif var:end_id==3
+  ~ ending f1
+elif var:end_id==4
+  ~ ending f2
+elif var:end_id==5
+  ~ ending c1
+elif var:end_id==6
+  ~ ending c2
+elif var:end_id==7
+  ~ ending d
+else
+  ~ ending e
+end

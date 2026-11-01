@@ -1,0 +1,41 @@
+# Test scene: one street corner, one building with a door, for the framework tests only.
+id = "demo_bowstreet"
+title = "测试场景：街角"
+start = [3, 12]
+rows = """
+################
+#BBBBBBB.......#
+#BffffFB..L....#
+#BffffFB.......#
+#BffffFB...S...#
+#BBBDBBB.......#
+#..............#
+#.......cc.....#
+#..L....cc..b..#
+#.......cc..b..#
+#..............#
+#..............#
+#..............#
+~~~~~~~~~~~~~~~~
+"""
+
+[legend]
+"." = { ground = "cobble" }
+"c" = { ground = "mud" }
+"#" = { ground = "flag", height = 7, wall = "stone", flags = 1 }
+"B" = { ground = "flag", height = 6, wall = "brick", region = 1, flags = 7 }
+"D" = { ground = "wood", region = 1 }
+"f" = { ground = "wood", region = 1 }
+"F" = { ground = "wood", region = 1, prop = "table", flags = 1 }
+"L" = { ground = "cobble", prop = "lamp", flags = 1 }
+"S" = { ground = "cobble", prop = "stall", flags = 1 }
+"b" = { ground = "cobble", prop = "barrel", flags = 1 }
+"~" = { ground = "water" }
+
+[[npc]]
+id = "matron"
+name = "测试人物"
+outfit = "matron"
+x = 8
+y = 5
+talk = "demo_start"

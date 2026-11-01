@@ -1,0 +1,123 @@
+n = 1
+title = "周报"
+dates = "1752年8月1日至4日"
+slots = 12
+start = "ch1_open"
+climax = "ch1_report"
+required = ["c1_not_drunk"]
+
+# Three slots a day: slot 3 is Sunday noon, 5 Sunday night, 6 Monday morning, 8 Monday night,
+# 11 Tuesday at dusk. Spots read these forced scenes through seen: to tell the days apart.
+[[forced]]
+slot = 3
+talk = "ch1_rat"
+
+[[forced]]
+slot = 5
+talk = "ch1_tuck_first"
+
+[[forced]]
+slot = 6
+talk = "ch1_monday"
+
+[[forced]]
+slot = 8
+talk = "ch1_tuck_lamp"
+
+[[forced]]
+slot = 11
+talk = "ch1_last"
+
+[[spot]]
+id = "ch1_body"
+name = "南的尸体"
+place = "迪奥特街酒窖"
+talk = "ch1_body"
+
+[[spot]]
+id = "ch1_rudd"
+name = "拉德大妈"
+place = "迪奥特街酒窖"
+talk = "ch1_rudd"
+
+[[spot]]
+id = "ch1_keane"
+name = "基恩太太"
+place = "迪奥特街酒窖"
+talk = "ch1_keane"
+
+[[spot]]
+id = "ch1_iron"
+name = "拉德大妈的炉子"
+place = "迪奥特街酒窖"
+talk = "ch1_iron"
+cond = "has:c1_bottle and has:c1_rule_addington"
+
+[[spot]]
+id = "ch1_flea"
+name = "跳蚤"
+place = "布罗德街"
+talk = "ch1_flea"
+
+[[spot]]
+id = "ch1_doolan"
+name = "轿夫多兰"
+place = "布罗德街"
+talk = "ch1_doolan"
+
+[[spot]]
+id = "ch1_books"
+name = "书贩"
+place = "七日晷"
+talk = "ch1_books"
+
+[[spot]]
+id = "ch1_general"
+name = "木腿老头"
+place = "七日晷"
+talk = "ch1_general"
+
+[[spot]]
+id = "ch1_boundary"
+name = "界石边的死人"
+place = "七日晷南边"
+talk = "ch1_boundary"
+cond = "seen:ch1_flea_first"
+
+[[spot]]
+id = "ch1_pym"
+name = "皮姆"
+place = "圣吉尔斯法衣室"
+talk = "ch1_pym"
+
+[[spot]]
+id = "ch1_bowell"
+name = "鲍尔大娘"
+place = "圣吉尔斯墓地"
+talk = "ch1_bowell"
+
+[[spot]]
+id = "ch1_sexton"
+name = "司事"
+place = "圣吉尔斯墓地"
+talk = "ch1_sexton"
+
+[[spot]]
+id = "ch1_crane"
+name = "克兰"
+place = "德鲁里巷药铺"
+talk = "ch1_crane"
+cond = "has:c1_bottle"
+
+[[spot]]
+id = "ch1_eleven"
+name = "修鞋匠的摊子"
+place = "教堂巷口"
+talk = "ch1_eleven"
+
+[[spot]]
+id = "ch1_tuck"
+name = "老塔克"
+place = "教堂巷岗亭"
+talk = "ch1_tuck_again"
+cond = "seen:ch1_tuck_first"

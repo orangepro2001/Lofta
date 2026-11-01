@@ -1,0 +1,213 @@
+n = 4
+title = "十一日"
+dates = "1752年8月31日至9月14日"
+# Four daytime slots, then three on the first New Style day. The eight night cells are var:night.
+slots = 7
+start = "ch4_open"
+climax = "ch4_end"
+required = ["c4_lawyer", "c4_rule_act", "c4_letter_lost"]
+
+[[forced]]
+slot = 0
+talk = "ch4_bow_first"
+
+[[forced]]
+slot = 1
+talk = "ch4_lawyer"
+
+[[forced]]
+slot = 2
+talk = "ch4_gale_letter"
+
+[[forced]]
+slot = 2
+talk = "ch4_kitty_letter"
+cond = "flag:kitty_alive"
+
+[[forced]]
+slot = 3
+talk = "ch4_last_day"
+
+[[forced]]
+slot = 4
+talk = "ch4_dusk"
+
+[[forced]]
+slot = 4
+talk = "ch4_morning"
+cond = "flag:ch4_night_over"
+
+[[forced]]
+slot = 5
+talk = "ch4_timeline"
+cond = "flag:ch4_night_over"
+
+# Monday to Wednesday.
+
+[[spot]]
+id = "ch4_bow"
+name = "约翰·菲尔丁"
+place = "弓街"
+talk = "ch4_bow"
+cond = "not flag:ch4_night_over"
+
+[[spot]]
+id = "ch4_welch"
+name = "韦尔奇"
+place = "霍尔本"
+talk = "ch4_welch"
+cond = "not flag:ch4_night_over"
+
+[[spot]]
+id = "ch4_swan"
+name = "老天鹅码头"
+place = "老天鹅码头"
+talk = "ch4_swan"
+cond = "not flag:ch4_night_over"
+
+[[spot]]
+id = "ch4_wapping"
+name = "奥克斯太太"
+place = "沃平"
+talk = "ch4_wapping"
+cond = "not flag:ch4_night_over"
+
+[[spot]]
+id = "ch4_maddy"
+name = "玛德莱娜"
+place = "斯皮塔佛德"
+talk = "ch4_maddy"
+cond = "not flag:ch4_night_over"
+
+[[spot]]
+id = "ch4_elias"
+name = "以利亚"
+place = "科文特花园"
+talk = "ch4_elias"
+cond = "not flag:ch4_night_over"
+
+[[spot]]
+id = "ch4_flea"
+name = "跳蚤"
+place = "布罗德街"
+talk = "ch4_flea"
+cond = "not flag:ch4_night_over"
+
+[[spot]]
+id = "ch4_pym"
+name = "皮姆"
+place = "圣吉尔斯法衣室"
+talk = "ch4_pym"
+cond = "not flag:ch4_night_over"
+
+[[spot]]
+id = "ch4_keane"
+name = "基恩太太"
+place = "迪奥特街"
+talk = "ch4_keane"
+cond = "not flag:ch4_night_over"
+
+[[spot]]
+id = "ch4_tuck_night"
+name = "老塔克"
+place = "教堂巷岗亭"
+talk = "ch4_tuck_night"
+cond = "seen:ch4_lawyer and not flag:ch4_night_over"
+
+# Thursday 14 September. Walk anywhere; nothing here moves the main line.
+
+[[spot]]
+id = "ch4_st_sleeper"
+name = "台阶上的人"
+place = "圣吉尔斯教堂"
+talk = "ch4_st_sleeper"
+cond = "flag:ch4_night_over"
+
+[[spot]]
+id = "ch4_st_maid"
+name = "算工钱的女仆"
+place = "布罗德街"
+talk = "ch4_st_maid"
+cond = "flag:ch4_night_over"
+
+[[spot]]
+id = "ch4_st_boy"
+name = "算生日的孩子"
+place = "七日晷"
+talk = "ch4_st_boy"
+cond = "flag:ch4_night_over"
+
+[[spot]]
+id = "ch4_st_crank"
+name = "抱纸卷的瘦子"
+place = "七日晷"
+talk = "ch4_st_crank"
+cond = "flag:ch4_night_over"
+
+[[spot]]
+id = "ch4_st_hodge"
+name = "修鞋匠霍奇"
+place = "教堂巷"
+talk = "ch4_st_hodge"
+cond = "flag:ch4_night_over"
+
+[[spot]]
+id = "ch4_st_flea"
+name = "跳蚤"
+place = "布罗德街"
+talk = "ch4_st_flea"
+cond = "flag:ch4_night_over"
+once = true
+
+[[spot]]
+id = "ch4_st_elias"
+name = "以利亚"
+place = "科文特花园"
+talk = "ch4_st_elias"
+cond = "flag:ch4_night_over"
+
+[[spot]]
+id = "ch4_st_pym"
+name = "皮姆"
+place = "圣吉尔斯法衣室"
+talk = "ch4_st_pym"
+cond = "flag:gale_dead"
+
+[[spot]]
+id = "ch4_st_lucy"
+name = "伯利恒"
+place = "摩尔菲尔德"
+talk = "ch4_st_lucy"
+cond = "flag:ch4_night_over"
+once = true
+
+[[spot]]
+id = "ch4_st_will"
+name = "弗利特"
+place = "弗利特"
+talk = "ch4_st_will"
+cond = "flag:ch4_night_over"
+once = true
+
+[[spot]]
+id = "ch4_st_ned"
+name = "老天鹅的台阶"
+place = "老天鹅码头"
+talk = "ch4_st_ned"
+cond = "flag:ch4_night_over"
+once = true
+
+[[spot]]
+id = "ch4_st_maddy"
+name = "玛德莱娜"
+place = "斯皮塔佛德"
+talk = "ch4_st_maddy"
+cond = "flag:ch4_night_over"
+once = true
+
+[[spot]]
+id = "ch4_st_home"
+name = "回家"
+place = "教堂巷"
+talk = "ch4_st_home"
+cond = "flag:ch4_night_over"

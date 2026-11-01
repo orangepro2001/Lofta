@@ -1,0 +1,6 @@
+# Speakers allowed in dialogue. A name that is not here or in cast/chN.toml fails the build.
+# Chapter casts live in cast/chN.toml; only the two voices every chapter shares stay here.
+speakers = ["旁白", "露丝"]
+
+# A speaker is dead once the condition holds; story_check fails if they talk after that.
+[mortal]

@@ -1,0 +1,19 @@
+# Everyone who speaks in chapter 6, and when each of them can no longer speak.
+speakers = [
+  "旁白", "露丝", "老塔克", "跳蚤", "以利亚", "玛德莱娜", "约翰·菲尔丁", "亨利·菲尔丁", "韦尔奇",
+  "皮姆", "克兰", "佩雷拉", "内德", "威尔", "露西", "基蒂", "拉德大妈", "基恩太太", "书贩", "司事",
+  "爵士的律师", "控方律师", "记录官", "陪审员", "水手", "教区执事", "斯隆爵士", "药房伙计", "女总管",
+  "霍尔特", "莱尔爵士", "科布",
+]
+
+[mortal]
+"鲍尔大娘" = "flag:bowell_dead"
+"盖尔" = "flag:gale_dead"
+"佩雷拉" = "flag:pereira_hanged"
+"克兰" = "flag:crane_dead"
+"皮姆" = "flag:pym_dead"
+"基蒂" = "flag:ch3_done and not flag:kitty_alive"
+"内德" = "flag:ch4_done and not flag:ned_alive"
+"露西" = "flag:ch4_done and not flag:lucy_alive"
+"威尔" = "flag:ch4_done and not flag:will_alive"
+"莱尔爵士" = "flag:ch6_done"

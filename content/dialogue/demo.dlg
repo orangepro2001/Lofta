@@ -1,0 +1,25 @@
+# Framework test conversation. Exercises lines, conditions, choices, once-only options and effects.
+=== demo_start
+旁白: 雨后的街角，泥水顺着鹅卵石往下淌。
+露丝: 借问一句，这屋里昨夜出了什么事？
+if flag:demo_met
+  露丝: 我们又见面了。
+end
+~ flag demo_met
+-> demo_menu
+
+=== demo_menu
+* (once) 问死者生前喝不喝酒
+  旁白: 她从不沾酒，这一点街坊都能作证。
+  ~ card c_demo_no_gin
+  -> demo_menu
+* (once) 看看死者的嘴唇
+  旁白: 唇色发青，舌根有蒜一样的气味。
+  ~ card c_demo_garlic
+  -> demo_menu
+* (once) 问这条街的规矩
+  旁白: 醉死的人，身上都有一股酒气。
+  ~ card c_demo_drunk_rule
+  -> demo_menu
+* 离开
+  -> END

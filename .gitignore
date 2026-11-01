@@ -1,0 +1,5 @@
+build/
+__pycache__/
+*.pyc
+lofta_error.txt
+lofta_update.log

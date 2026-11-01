@@ -1,0 +1,74 @@
+n = 7
+title = "决算"
+dates = "1752年12月12日至1753年1月"
+# The confrontation takes one slot, Wednesday two, the file and the choice one, the ending and the
+# last act two. The second paid scene burns the last three, so the free roam ends there.
+slots = 6
+start = "ch7_open"
+climax = "ch7_case"
+required = ["c7_ledger", "c7_rule_wife"]
+
+[finale]
+flags = [
+  "kitty_alive", "ned_alive", "lucy_alive", "will_alive", "pereira_cleared", "pereira_hanged",
+  "crane_taken", "pym_spoke", "holt_found", "gale_book", "bottles_tested", "have_cordial",
+  "hannah_stone", "exhumed", "ch1_bill_true", "ch1_took_groat",
+]
+endings = ["a", "b", "c1", "c2", "d", "e", "f1", "f2"]
+min_endings = 2
+
+[[spot]]
+id = "ch7_wall"
+name = "穷人坑墙根（花一个时段）"
+place = "圣吉尔斯墓地"
+talk = "ch7_wall"
+cond = "not flag:hannah_stone and var:ch7_days<2"
+once = true
+
+[[spot]]
+id = "ch7_holt"
+name = "找霍尔特（花一个时段）"
+place = "银街印刷所"
+talk = "ch7_holt"
+cond = "not flag:holt_found and var:ch7_days<2"
+once = true
+
+[[spot]]
+id = "ch7_holt_again"
+name = "霍尔特"
+place = "银街印刷所"
+talk = "ch7_holt_again"
+cond = "flag:holt_found and not seen:ch7_holt and var:ch7_days<2"
+once = true
+
+[[spot]]
+id = "ch7_madeleine"
+name = "玛德莱娜（花一个时段）"
+place = "斯皮塔佛德勒费弗尔宅"
+talk = "ch7_counsel"
+cond = "not flag:pereira_hanged and var:ch7_days<2"
+once = true
+
+[[spot]]
+id = "ch7_elias"
+name = "以利亚（花一个时段）"
+place = "科文特花园"
+talk = "ch7_counsel"
+cond = "flag:pereira_hanged and var:ch7_days<2"
+once = true
+
+[[spot]]
+id = "ch7_flea"
+name = "跳蚤"
+place = "布罗德街"
+talk = "ch7_flea"
+cond = "var:ch7_days<2"
+once = true
+
+[[spot]]
+id = "ch7_eleven"
+name = "拉德大妈和霍奇"
+place = "迪奥特街酒窖"
+talk = "ch7_eleven"
+cond = "var:ch7_days<2"
+once = true

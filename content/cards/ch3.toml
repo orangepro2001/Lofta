@@ -1,0 +1,276 @@
+# Chapter 3 cards. The second rebuttal and the table read backwards, for the empty column.
+
+[[card]]
+id = "c3_visitor"
+kind = "testimony"
+title = "你丈夫是访视人"
+text = "盖尔说：托马斯·阿什比是长存会的访视人，他本要在1月质询他。他只说有几笔买卖要查。"
+source = "盖尔"
+chapter = 3
+
+[[card]]
+id = "c3_rule_natural"
+kind = "rule"
+title = "名义日和自然日"
+text = "日子的名字可以改，过的日子改不了。法案第6条：旧约到期，按同样的自然日。9月10日届满的契约，新式9月21日到期。"
+source = "盖尔"
+certainty = "必然"
+chapter = 3
+
+[[card]]
+id = "c3_rule_eight"
+kind = "rule"
+title = "八日验明"
+text = "届满前至少八日须验明各命，逾期未验者不得分配。到期日往前八天是新式9月13日，就是旧式9月2日。"
+source = "盖尔"
+certainty = "必然"
+chapter = 3
+
+[[card]]
+id = "c3_rule_ns"
+kind = "rule"
+title = "荷兰用新式"
+text = "荷兰省早用新式，比英国的日子晚写十一天。鹿特丹来信的落款可以比伦敦的今天还晚。"
+source = "玛德莱娜"
+certainty = "必然"
+chapter = 3
+
+[[card]]
+id = "c3_rule_dual"
+kind = "rule"
+title = "三月二十五才换年"
+text = "旧时岁首在3月25日。1月到3月24日的日子写双年，1750/1年3月4日，按1月1日换年算就是1751年。"
+source = "玛德莱娜"
+certainty = "必然"
+chapter = 3
+
+[[card]]
+id = "c3_ten_list"
+kind = "fact"
+title = "十处单子"
+text = "格里格斯留下一张印的单子，列十处姓名住址，末尾一行：第十一处另有人办。"
+source = "格里格斯的遗物"
+chapter = 3
+tags = ["ten_list", "griggs"]
+
+[[card]]
+id = "c3_lucy_bottle"
+kind = "fact"
+title = "露西的瓶子"
+text = "露西的蓝瓶没开过，入院清点时被院方药房收走了，还在架上。"
+source = "伯利恒的看护"
+chapter = 3
+
+[[card]]
+id = "c3_will_case"
+kind = "fact"
+title = "弗利特的楼梯"
+text = "8月11日夜，威尔·佩林在弗利特的楼梯上被人从背后推了一把，没摔死。蓝瓶摔碎了，他已喝了大半。"
+source = "威尔·佩林"
+chapter = 3
+tags = ["attacked"]
+
+[[card]]
+id = "c3_sam"
+kind = "fact"
+title = "萨姆的瓶子"
+text = "沃平的驳船工萨姆·奥克斯7月19日溺死，记“溺水”。他的蓝瓶封蜡完好，一口没喝。出事前几天，一个穿灰外套的人来问过他哪天值夜。"
+source = "亲眼所见"
+chapter = 3
+tags = ["unopened", "attacked"]
+
+[[card]]
+id = "c3_anne"
+kind = "fact"
+title = "安妮的瓶子"
+text = "克拉肯韦尔的女裁缝安妮·普鲁伊特7月2日坠楼，记“跌落”。她的蓝瓶封蜡完好，一口没喝。"
+source = "亲眼所见"
+chapter = 3
+tags = ["unopened", "attacked"]
+
+[[card]]
+id = "c3_kitty_case"
+kind = "fact"
+title = "风暴夜的集市"
+text = "8月25日风暴夜，集市散场后，有个打手对基蒂·夏普下手。她有疤，有存根，瓶子早扔进了阴沟。"
+source = "史密斯菲尔德"
+chapter = 3
+tags = ["attacked"]
+
+[[card]]
+id = "c3_cobb_knight"
+kind = "testimony"
+title = "替爵士跑腿"
+six = true
+text = "老塔克说，捉贼人科布最近替一位爵士跑腿。"
+source = "老塔克"
+chapter = 3
+tags = ["cobb_knight"]
+
+[[card]]
+id = "c3_sam_share"
+kind = "testimony"
+title = "萨姆那一股"
+six = true
+text = "老塔克说，沃平淹死的萨姆也有人替他领过先令，那一股在经纪人佩雷拉名下。他说是皮姆先生喝多了讲的。"
+source = "老塔克"
+chapter = 3
+tags = ["pym_said"]
+
+[[card]]
+id = "c3_flea_grey"
+kind = "testimony"
+title = "灰外套进了爵士的门"
+text = "跳蚤说，那个有礼貌的灰外套走过一位爵士家的后门，门房替他开门，还喊他科布先生。"
+source = "跳蚤"
+chapter = 3
+tags = ["cobb_knight"]
+
+[[card]]
+id = "c3_ten_doomed"
+kind = "inference"
+title = "十个人都在等瓶底"
+text = "这些人都死于蓝瓶，十处都发了蓝瓶，所以单子上的十个人都要死在瓶底。"
+source = "合成"
+chapter = 3
+
+[[card]]
+id = "c3_griggs_did"
+kind = "fallacy"
+title = "人是格里格斯杀的"
+text = "瓶子杀人，瓶子是格里格斯发的，所以人是他杀的。"
+source = "合成"
+chapter = 3
+
+[[card]]
+id = "c3_two_groups"
+kind = "rule"
+title = "两组死法"
+text = "死亡分成两组：一组喝到瓶底，一组瓶子没开就出了“意外”。第二组是有人动手。"
+source = "合成"
+certainty = "或然"
+chapter = 3
+
+[[card]]
+id = "c3_absent_el"
+kind = "rule"
+title = "空着的一列"
+text = "动手的那一组落在V.L.、M.P.、S.H.名下，E.L.一列全空。E.L.的两条命是瓶子带走的。动手的人也许在替E.L.清路。"
+source = "合成"
+certainty = "或然"
+chapter = 3
+
+[[card]]
+id = "c3_mp_did"
+kind = "fallacy"
+title = "佩雷拉脱不了干系"
+text = "遭袭的命M.P.名下最多，所以这事和佩雷拉脱不了干系。"
+source = "合成"
+chapter = 3
+
+[[card]]
+id = "c3_lyle"
+kind = "inference"
+title = "莱尔爵士雇科布"
+text = "袭击在替E.L.清路，科布替一位爵士跑腿，持有人里只有一位爵士：埃弗拉德·莱尔。他为什么去看爵士自己的命，还不知道。"
+source = "合成"
+chapter = 3
+tags = ["lyle"]
+
+[[card]]
+id = "c3_is_17"
+kind = "fact"
+title = "17号"
+text = "《长存册》赫尔页：17号，R. 詹姆斯，圣詹姆斯济贫院洗衣房。那是她嫁人以前的名字。"
+source = "《长存册》"
+chapter = 3
+tags = ["is_17"]
+
+[[card]]
+id = "c3_who_sh"
+kind = "fact"
+title = "S.H. 是谁"
+text = "塞普蒂默斯·赫尔持2、17、19号。没有人见过他。皮姆说信是转的，托马斯替他抄过东西。"
+source = "《长存册》、皮姆"
+chapter = 3
+
+[[table]]
+id = "t3_attacks"
+title = "遭袭的命与持有人"
+columns = ["E.L.", "V.L.", "M.P.", "S.H."]
+
+[[table.row]]
+card = "c3_anne"
+values = ["", "有", "", ""]
+
+[[table.row]]
+card = "c3_sam"
+values = ["", "", "有", ""]
+
+[[table.row]]
+card = "c3_kitty_case"
+values = ["", "", "有", ""]
+
+[[table.row]]
+card = "c3_will_case"
+values = ["", "", "", "有"]
+
+[[recipe]]
+id = "d3_ten_doomed"
+verb = "deduce"
+major = "c2_rule_bottle"
+minor = "ten_list"
+output = "c3_ten_doomed"
+form = "这三人有瓶，喝到底，死了；此十人有瓶；所以此十人也许如此。"
+explain = "三个人都喝到了瓶底才死。十处单子上的人都收了瓶子，可是瓶子是慢慢喝的，喝到哪一天没有人知道。"
+
+[[recipe]]
+id = "f3_griggs"
+verb = "deduce"
+major = "c3_ten_doomed"
+minor = "griggs"
+fallacy = "相关当因果"
+fault = "送货的手和下毒的手隔着一截。格里格斯6月就死了，7月、8月还在死人。"
+output = "c3_griggs_did"
+form = "有人死于此物；此人经手此物；所以此人杀人。"
+explain = "瓶子杀人，瓶子是格里格斯一处一处发出去的。"
+
+[[recipe]]
+id = "r3_two_groups"
+verb = "rebut"
+target = "c2_rule_bottle"
+counter = "unopened"
+output = "c3_two_groups"
+retires = ["c2_rule_bottle", "c3_ten_doomed", "c3_griggs_did"]
+explain = "规律说这些人都死于蓝瓶。萨姆和安妮的瓶子封蜡完好，他们死于别的东西。死亡要分成两组。"
+
+[[recipe]]
+id = "i3_absent"
+verb = "induce"
+table = "t3_attacks"
+column = "E.L."
+min = 4
+cond = "seen:ch3_reg_first and made:r3_two_groups"
+output = "c3_absent_el"
+explain = "四例遭袭，落在三个持有人名下，E.L.一例也没有。四行不够定罪。这一列只能告诉你先看谁。"
+
+[[recipe]]
+id = "f3_most"
+verb = "induce"
+table = "t3_attacks"
+column = "M.P."
+min = 3
+cond = "seen:ch3_reg_first"
+fallacy = "以偏概全"
+fault = "名下的命被杀，说明他在赔钱。一个人赔钱，推不出他动手。"
+output = "c3_mp_did"
+explain = "遭袭的命M.P.名下最多。"
+
+[[recipe]]
+id = "d3_lyle"
+verb = "deduce"
+major = "c3_absent_el"
+minor = "cobb_knight"
+output = "c3_lyle"
+form = "若袭击替此人清路，且下手的人替此人跑腿，则此人是雇主；两者皆然；所以此人是雇主。"
+explain = "E.L.一列全空，沃平去过的那件灰外套是科布，科布替一位爵士跑腿，持有人里只有莱尔是爵士。"

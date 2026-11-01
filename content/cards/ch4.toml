@@ -1,0 +1,156 @@
+# Chapter 4 cards. New verb is the route, so few recipes; the budget is 12 cards and 5 recipes.
+# c4_lawyer is the fifth of the six things and must keep source = "老塔克" and six = true.
+
+[[card]]
+id = "c4_lawyer"
+kind = "testimony"
+title = "律师盯着八日验明"
+six = true
+text = "老塔克说，爵士的律师要盯着9月2日的八日验明，一条也不放过。她问他怎么知道，他说是皮姆先生喝多了说的。"
+source = "老塔克"
+chapter = 4
+tags = ["last_night", "pym_said"]
+
+[[card]]
+id = "c4_rule_act"
+kind = "rule"
+title = "两套算法，方向相反"
+text = "法院和季审按名义日开庭，日子不改，实际比往年早十一天。集市、租金、利息和一切契约按“各该同样的自然日”，名义上推后十一天。"
+source = "约翰·菲尔丁"
+certainty = "必然"
+chapter = 4
+tags = ["rule_act"]
+
+[[card]]
+id = "c4_gale_letter"
+kind = "fact"
+title = "盖尔的来信"
+text = "盖尔来信：星期三白天外出验命，薄暮方回，本人守到午夜。另起一行小字：公会敲十点落闩，门房只认律师，不认信。契约9月10日届满，他写得很清楚。"
+source = "盖尔的信"
+chapter = 4
+tags = ["last_night", "term_day"]
+
+[[card]]
+id = "c4_cobb_water"
+kind = "rule"
+title = "科布的渡口习惯"
+text = "科布要让人落水，总等落潮过了大半才上船：渡船收工，台阶上没有人，桥洞的水声盖过人声。码头上不止一个人这样说。"
+source = "码头上的人"
+certainty = "或然"
+chapter = 4
+tags = ["cobb_water"]
+
+[[card]]
+id = "c4_wapping_tide"
+kind = "fact"
+title = "沃平的潮水牌"
+text = "潮水牌上写着：星期三夜里，桥下沃平一线六点满潮，十二点见底。这是桥下头的潮。"
+source = "码头上的潮水牌"
+chapter = 4
+tags = ["tide_wapping"]
+
+[[card]]
+id = "c4_tide_table"
+kind = "fact"
+title = "老天鹅的潮时"
+text = "玛德莱娜按月龄算出：星期三月龄五天，桥上头的老天鹅七点满潮，一点见底。"
+source = "玛德莱娜"
+chapter = 4
+tags = ["tide"]
+
+[[card]]
+id = "c4_tide"
+kind = "inference"
+title = "敲过十一点，老天鹅"
+text = "落潮从七点走到一点，过了大半是四个钟头。星期三夜里敲过十一点，科布会在老天鹅的台阶上。"
+source = "合成"
+chapter = 4
+
+[[card]]
+id = "c4_tide_wrong"
+kind = "fallacy"
+title = "敲过十点，老天鹅"
+text = "落潮从六点走到十二点，过了大半是四个钟头。星期三夜里敲过十点，科布会在老天鹅的台阶上。"
+source = "合成"
+chapter = 4
+
+[[card]]
+id = "c4_letter_lost"
+kind = "fact"
+title = "给内德的信丢了"
+text = "三封警告信一起交给老塔克。送伯利恒和弗利特的都到了，只有给内德的那一封没有到他手里。内德一个字也不知道。"
+source = "亲自核对"
+chapter = 4
+tags = ["letter_lost"]
+
+[[card]]
+id = "c4_gale_book"
+kind = "fact"
+title = "盖尔的札记"
+text = "盖尔推给她的札记，用律师的缩写写成。她读得懂的只有日期和数目：访视人每报一次病危，赫尔就买入一笔，一笔对一笔。他只说了一句：“同一只手。”"
+source = "盖尔"
+chapter = 4
+tags = ["gale_book"]
+
+[[card]]
+id = "c4_timeline"
+kind = "fact"
+title = "科布这一夜的路"
+text = "门房、船夫、看守各说一段：七点钱送到摩尔菲尔德和弗利特，十一点科布到老天鹅，半夜后沿泰晤士街往西，一点到教堂巷。他整夜没有到过法官巷。"
+source = "约翰·菲尔丁"
+chapter = 4
+tags = ["cobb_timeline"]
+
+[[card]]
+id = "c4_seven"
+kind = "inference"
+title = "还剩七天"
+text = "到期日按自然日是新式9月21日。老贝利的9月14日按名义日开庭，离它只有七天。"
+source = "合成"
+chapter = 4
+
+[[card]]
+id = "c4_no_owner"
+kind = "inference"
+title = "蓝瓶还没有主人"
+text = "科布这一夜走的是水路和楼梯，手下是看护和看守。蓝瓶要的是药铺、瓶子和半年的工夫。抓到他，只抓到了意外那一组。"
+source = "合成"
+chapter = 4
+
+[[recipe]]
+id = "d4_tide"
+verb = "deduce"
+major = "c4_cobb_water"
+minor = "tide"
+output = "c4_tide"
+form = "凡科布落水之事，必在落潮过半；今夜此地落潮过半在此时；所以他此时在此地。"
+explain = "老天鹅七点满潮，一点见底，落潮走了四个钟头是十一点。这条习惯是或然的，韦尔奇也知道。"
+
+[[recipe]]
+id = "f4_tide"
+verb = "deduce"
+major = "c4_cobb_water"
+minor = "tide_wapping"
+fallacy = "此地当各地"
+fault = "这张潮水牌是桥下头的。老天鹅在桥上头，水过桥洞要挤一阵，比桥下慢一个钟头。此地的钟点搬不到彼地去。"
+output = "c4_tide_wrong"
+form = "凡科布落水之事，必在落潮过半；彼地落潮过半在此时；所以他此时在此地。"
+explain = "六点满潮，十二点见底，落潮走了四个钟头是十点。"
+
+[[recipe]]
+id = "d4_seven"
+verb = "deduce"
+major = "c4_rule_act"
+minor = "term_day"
+output = "c4_seven"
+form = "凡契约按自然日；此约届满在旧式9月10日；所以届满在新式9月21日。"
+explain = "法院按名义日走，契约按自然日走。9月14日开庭的那一天，长存会的到期日还有七天。"
+
+[[recipe]]
+id = "d4_no_owner"
+verb = "deduce"
+major = "c3_two_groups"
+minor = "cobb_timeline"
+output = "c4_no_owner"
+form = "死亡分作两组；此人只碰过其中一组；所以另一组另有其人。"
+explain = "意外一组是科布和他买通的人。蓝瓶一组他从没碰过，全城庆祝的不是这一组。"

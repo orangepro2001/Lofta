@@ -1,0 +1,332 @@
+# Chapter 6, the people Ruth can keep going back to. Greetings and answers change by act.
+
+=== ch6_elias
+if flag:ch6_act3
+  以利亚: 太太，您这几天没睡。从眼睑看得出来。
+elif flag:pereira_hanged
+  以利亚: 我又去讲堂了。拿刀的时候手不抖。这倒叫我害怕。
+elif flag:ch6_act2
+  以利亚: 讲堂里有人问我认不认得十七号的寡妇。我说认得，她解剖比我好。
+else
+  以利亚: 亨特先生这星期讲肝。我满脑子都是肝，您别让我看您的脸色。
+end
+-> ch6_elias_menu
+
+=== ch6_elias_menu
+* (once) 问他怎么还敢来
+  以利亚: 房东太太也问。她让我走后门，说怕传染。
+  以利亚: 我说这病不传染。她说贪财最传染。
+  -> ch6_elias_menu
+* (once, has:c6_orme_list and not has:c6_orme_1722) 问他那个年份
+  以利亚: 我只会切，不会算。英国人的一年从哪天开始，您比我清楚。
+  -> ch6_elias_menu
+* (once, flag:bottles_tested) 问他那只瓶子
+  以利亚: 我又试了一回。真的没有。一个杀人的人，发出去两瓶糖水。
+  -> ch6_elias_menu
+* (once, flag:rotterdam_paper) 给他看鹿特丹的纸
+  以利亚: 一个下葬的日子。太太，这个我不懂，我只看得懂骨头。
+  旁白: 她把纸收回去。眼下要看的东西够多了。
+  -> ch6_elias_menu
+* (once, flag:pereira_hanged) 问他那天以后睡得着吗
+  以利亚: 睡得着。这最糟。
+  以利亚: 我梦见亨特先生问我，这块肌肉叫什么。我答对了。
+  -> ch6_elias_menu
+* (once, flag:holt_found) 问他霍尔特这种人
+  以利亚: 我们讲堂也有一个，刀磨了四十年，只跟死人说话。
+  以利亚: 这种老头都有一件事不说。您别跟他比耐心。
+  -> ch6_elias_menu
+* 问他下一步（花一个时段）
+  -> ch6_direction_e
+* 走
+  -> END
+
+=== ch6_direction_e
+~ time 1
+if not has:c6_orme_list
+  以利亚: 您胳膊上那个疤，切尔西的斯隆爵士认得。他今天要是记得的话。
+elif not has:c6_bottle_clean
+  以利亚: 伯利恒药房还收着露西的瓶子，从没人试过。
+elif not flag:holt_found and has:c5_anon_letter
+  以利亚: 那个缺尾巴的 g。铅字不会自己走路。
+elif not has:c6_coffin
+  以利亚: 律师在等特许状。您打算等他吗？
+elif not seen:ch6_table
+  以利亚: 把牌都摊开，只看背面。每个标本都要写是谁送来的。
+elif not has:c6_denied
+  以利亚: 问问皮姆先生。问不了他，就问他的账。
+else
+  以利亚: 我看不出来了，太太。剩下的不在标本上。
+end
+
+=== ch6_madeleine
+if flag:ch6_act3
+  玛德莱娜: 你瘦了。不要紧，这不影响运算。
+elif flag:ch6_act2
+  玛德莱娜: 你的手红了。洗衣服比算题还伤人，n'est-ce pas？
+else
+  玛德莱娜: 我没有多少时间。母亲以为我在学法语。
+end
+-> ch6_madeleine_menu
+
+=== ch6_madeleine_menu
+* 请她算算账
+  ~ fund
+  玛德莱娜: 活着 {fund_total} 股，你占 {fund_shares} 股。合 {fund_ruth} 镑。
+  玛德莱娜: 一个数也没到你手里。这就是大法官法庭。
+  -> ch6_madeleine_menu
+* (once) 问她母亲怎么说
+  玛德莱娜: 她说你是她今年最贵的一笔坏账。她的两条命都没了，你的还在。
+  -> ch6_madeleine_menu
+* (once) 问她《女士日记》
+  玛德莱娜: 今年的题我解出来了，署的是别人的名字。编者夸我有男子气概。
+  -> ch6_madeleine_menu
+* (once, flag:pereira_cleared) 问佩雷拉先生
+  玛德莱娜: 他又开始给我布置题了。他说你的星期算得不错。这是他说过最重的话。
+  -> ch6_madeleine_menu
+* (once, flag:rotterdam_paper) 问她那张纸
+  玛德莱娜: 牧师抄得很工整。你要查前妻，我替你查到了，别的我不知道。
+  旁白: 她已经在看别的题了。那张纸回到旧账本里。
+  -> ch6_madeleine_menu
+* 问她下一步（花一个时段）
+  -> ch6_direction_m
+* 送她出门
+  -> END
+
+=== ch6_direction_m
+~ time 1
+if not has:c6_orme_list
+  玛德莱娜: 你胳膊上的事只有一个活人说得清。切尔西。
+elif not has:c6_orme_1722
+  玛德莱娜: 那张名单。三月二十五，你忘了吗？
+elif not has:c6_bottle_clean
+  玛德莱娜: 十条命，十只瓶。全试过的是哪几只？缺的那一项去补上。
+elif not flag:holt_found and has:c5_anon_letter
+  玛德莱娜: 字模也是一条线。谁摸过，谁就在账上。
+elif not has:c6_coffin
+  玛德莱娜: 一个条件没有验过，整道题都不算解了。你见过他入殓吗？
+elif not seen:ch6_table
+  玛德莱娜: 每个条件都要写出处。你的牌，谁给的？
+else
+  玛德莱娜: 该问的你都问了。Courage。
+end
+
+=== ch6_flea
+if flag:ch6_act3
+  跳蚤: 阿什比太太，霜天里火把好卖。您要一根吗？
+elif seen:ch6_the_night
+  跳蚤: 您看我的疤。以利亚先生说比您那个还圆。
+else
+  跳蚤: 阿什比太太。打听事一便士，挨骂免费。
+end
+-> ch6_flea_menu
+
+=== ch6_flea_menu
+* 问街上说她什么
+  if flag:lyle_guilty
+    跳蚤: 说您一个爵士都吃下去了，下一个是大主教。
+  elif flag:ch6_act3
+    跳蚤: 说您半夜出门。您可不是嘛。
+  elif flag:ch6_act2
+    跳蚤: 说您洗的是血。我说洗的是拉德大妈的被单，比血难洗。
+  else
+    跳蚤: 说您一夜得了三股。我说三股什么，他们说您问问您那死鬼丈夫。
+  end
+  -> ch6_flea_menu
+* (once) 问门上的粉笔是谁写的
+  跳蚤: 不是我。我的数没那么大。
+  -> ch6_flea_menu
+* (once, seen:ch6_the_night) 问他头还疼不疼
+  跳蚤: 太太，您下回低头快一点。我的头就这一个。
+  -> ch6_flea_menu
+* 走
+  -> END
+
+=== ch6_tuck
+if flag:ch6_act3
+  老塔克: 十一点过了——天晴——有霜——
+elif flag:ch6_act2
+  老塔克: 十点过了——大雾——太太晾衣裳晾到这时候。
+else
+  老塔克: 九点过了——有雾——太太还没睡。
+end
+旁白: 灯笼挡在两人之间。他缩在岗亭的暗处，手套搭着提环。
+-> ch6_tuck_menu
+
+=== ch6_tuck_menu
+* 问他今夜巷子里有什么
+  if flag:ch6_act3
+    老塔克: 霜。两个醉汉。一只猫。太太该早些睡。
+  elif flag:ch6_act2
+    老塔克: 七日晷那边有人说要来砸门。今夜太冷，说说而已。
+  else
+    老塔克: 粉笔是七日晷两个学徒写的。一个写，一个望风。
+    老塔克: 太太不用擦了，擦了也来。
+  end
+  -> ch6_tuck_menu
+* (once, seen:ch6_door_clean) 问他门是谁刷的
+  老塔克: 教堂巷的门，我巡的。
+  旁白: 他没有再说。她等了一会儿。
+  -> ch6_tuck_menu
+* (once, flag:pereira_hanged) 问他那天有没有看见囚车
+  老塔克: 囚车走的是圣吉尔斯，不归我这条巷子。钟点不会错，那天是星期三。
+  -> ch6_tuck_menu
+* (once, seen:ch6_table and not made:r6_source) 问他怎么知道那些事
+  老塔克: 皮姆先生喝多了什么都说。
+  旁白: 嗓子和八月一样。灯笼也没有动。
+  -> ch6_tuck_menu
+* (once, made:r6_source) 说皮姆没说过
+  露丝: 皮姆没有说过那些话。
+  老塔克: 十一点过了，太太。
+  旁白: 拇指在提环上敲了一下，停住了。
+  -> ch6_tuck_menu
+* (once, has:c6_coffin) 问他那夜看见墓地有灯没有
+  老塔克: 三点有霜。太太那夜睡得早。
+  旁白: 他报过钟点。他的灯笼停过。他什么也没有喊。
+  -> ch6_tuck_menu
+* 回去
+  老塔克: 太太，钟点不会错。
+  -> END
+
+=== ch6_john
+~ time 1
+if has:c6_coffin
+  约翰·菲尔丁: 您身上有冻土的气味。这几夜没有睡？
+elif flag:ch6_act2
+  约翰·菲尔丁: 您的手上是碱水味。洗了多少件？
+else
+  约翰·菲尔丁: 您今天走得慢。街上有人拦您？
+end
+-> ch6_john_menu
+
+=== ch6_john_menu
+* 问爵士的案子
+  if flag:lyle_guilty
+    约翰·菲尔丁: 定罪的是谁，走出去的是谁，您都看见了。您还要我说什么？
+  else
+    韦尔奇: 十二月那一庭。科布每天吃得比我好。
+  end
+  -> ch6_john_menu
+* (flag:ch6_warned and not flag:ch6_welch_watch and not seen:ch6_the_night) 请韦尔奇看住克兰
+  露丝: 星期四天黑的潮。克兰要走。
+  约翰·菲尔丁: 您能证明什么？
+  露丝: 什么也不能。我只知道他卖了秤。
+  约翰·菲尔丁: 桑德斯，你有几个人？
+  韦尔奇: 够看一扇门。
+  ~ flag ch6_welch_watch
+  -> ch6_john_menu
+* (once, flag:crane_dead) 要看克兰那封信
+  约翰·菲尔丁: 我看不见它。您看见什么？
+  旁白: 字抖得厉害。她拿着看了一会儿。
+  露丝: 抖成这样的字都差不多。
+  约翰·菲尔丁: 是吗？
+  -> ch6_john_menu
+* (once, flag:crane_taken) 问克兰招了什么
+  韦尔奇: 十三瓶。没见过赫尔。他吓成那样，编不出来。
+  -> ch6_john_menu
+* (once, flag:ch6_act2 and not has:c6_cobb_depo) 要一份科布的供词
+  旁白: 书记把抄件推过来。约翰先生一句一句背给她听，比纸上还准。
+  ~ card c6_cobb_depo
+  -> ch6_john_menu
+* (once, has:c6_all_false) 说老塔克的话全不算数
+  露丝: 他的话都不算数。爵士也许根本没有雇科布。
+  约翰·菲尔丁: 一个骗子说今天是星期三，今天就不是星期三了？
+  -> ch6_john_menu
+* (once, flag:ch6_act2) 上楼看亨利先生
+  亨利·菲尔丁: 太太，这份杂志我写了一年，骂了全伦敦，全伦敦照样活着。
+  亨利·菲尔丁: 塞涅卡说，人生如戏，不看多长，看怎么收场。我打算月底收摊。
+  旁白: 他笑到咳嗽，咳了很久。约翰先生在楼下听着，没有上来。
+  -> ch6_john_menu
+* 告辞
+  -> END
+
+=== ch6_pym
+if flag:pym_spoke
+  皮姆: 露丝。门口那位先生喝了我的茶，也不记账。
+elif seen:ch6_warning
+  皮姆: 星期四再说。今天的账对不上，差两便士，头一回。
+elif flag:ch6_act2
+  皮姆: 露丝，来，坐。你不是验尸婆了，茶还是有的。
+else
+  皮姆: 露丝，来，坐。你的茶我给你留着，凉了，不要紧。
+end
+-> ch6_pym_menu
+
+=== ch6_pym_menu
+* 问他赫尔是谁
+  if flag:pym_spoke
+    皮姆: 我说过了。我说过的，我都记着。
+  else
+    皮姆: 我转信，露丝，我只转信。这个星期已经有三个人问过我了。
+  end
+  -> ch6_pym_menu
+* (once) 问他托马斯年轻时什么样
+  皮姆: 他十四岁来公会，第一个月就替我找出一处加错的账。两便士。
+  皮姆: 我说你这孩子，两便士也找？他说账上没有小数。
+  -> ch6_pym_menu
+* (once, flag:ch6_act2) 问接替她的是谁
+  皮姆: 六十多了，眼睛不好，收两个格罗特也不脸红。一切都回到老样子了。
+  -> ch6_pym_menu
+* (once, has:c6_alive and flag:pym_spoke) 问他托马斯在哪里
+  露丝: 我开了棺。里面是别人。他在哪里？
+  旁白: 他把笔放下，放得很正。
+  皮姆: 上了法庭我手按着书说。这张桌子上我说不出来。
+  -> ch6_pym_menu
+* (seen:ch6_table and not has:c6_denied) 问他对守夜的说过什么
+  露丝: 勒费弗尔太太的账，你对老塔克说过吗？
+  皮姆: 账？这是受托人的事，我对谁也没有说过。
+  露丝: 他说你喝多了什么都说。
+  皮姆: 喝多？我这辈子喝多过两回，都记在账上。一回女儿出嫁，一回是今年一月。
+  皮姆: 两回都在家里。我没有和守夜的喝过一杯。
+  旁白: 他说到“守夜的”，手里的笔停了。
+  ~ card c6_denied
+  -> ch6_pym_menu
+* 喝完茶，走
+  -> END
+
+=== ch6_rudd
+if flag:ch1_took_groat
+  拉德大妈: 律师来问，我说了。八便士是我出的，我认。你要恨就恨。
+else
+  拉德大妈: 你来得正好，那盆被单还泡着。
+end
+拉德大妈: 有人说在我这儿洗衣服沾晦气。这酒窖死过的人比他见过的都多。
+-> END
+
+=== ch6_keane
+if flag:ch1_blamed_keane
+  基恩太太: 我在笼子里关过一夜，太太。他们往你门上泼脏水，我没有泼。
+  旁白: 她把盆往旁边挪了挪，给露丝让出半边地方。
+else
+  基恩太太: 我替你念了一串玫瑰经，太太。别告诉教区。
+end
+-> END
+
+=== ch6_books
+书贩: 太太，《老贝利庭审记录》，四便士。您的名字在第三页。
+if flag:ch6_broken
+  书贩: 还有一张小传单，《八便士一行》。我不卖给您，我有良心。
+else
+  书贩: 您站这儿读，我看不见。读完赶紧走，我的顾客怕沾上。
+end
+-> END
+
+=== ch6_pereira
+~ time 1
+旁白: 贝维斯马克斯的账房。佩雷拉坐在一堆荷兰来的纸中间，袖口是平的。
+佩雷拉: 太太。今天不用刀叉。
+-> ch6_pereira_menu
+
+=== ch6_pereira_menu
+* (once) 问假彩票那条线
+  佩雷拉: 纸来自多德雷赫特，字在伦敦。那副字的主人印东西从不多印一张。
+  佩雷拉: 这样的人我在交易巷没有见过。
+  -> ch6_pereira_menu
+* (once, flag:kitty_alive or flag:ned_alive) 问他名下那几股
+  ~ fund
+  佩雷拉: 您账上是 {fund_ruth} 镑，比您本可以拿的少。这一笔我不知道记在哪本账上。
+  -> ch6_pereira_menu
+* (once) 问他恨不恨这座城
+  佩雷拉: 太太，这些都记在第二本账上。第一本还要做生意。
+  -> ch6_pereira_menu
+* 告辞
+  -> END

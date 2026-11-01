@@ -1,0 +1,208 @@
+n = 3
+title = "名单"
+dates = "1752年8月20日至29日"
+slots = 18
+start = "ch3_open"
+climax = "ch3_climax"
+required = ["c3_ten_list", "c3_two_groups", "c3_lyle", "c3_is_17"]
+
+# Forced scenes in story order: a short chapter fires what is left in this order.
+[[forced]]
+slot = 2
+talk = "ch3_bow_first"
+cond = "not seen:ch3_bow_first"
+
+[[forced]]
+slot = 3
+talk = "ch3_gale_first"
+cond = "not seen:ch3_gale_first"
+
+[[forced]]
+slot = 4
+talk = "ch3_letter"
+cond = "not seen:ch3_letter"
+
+[[forced]]
+slot = 4
+talk = "ch3_note_check"
+
+[[forced]]
+slot = 5
+talk = "ch3_tuck_cobb"
+
+[[forced]]
+slot = 6
+talk = "ch3_griggs_first"
+cond = "not seen:ch3_griggs_first"
+
+[[forced]]
+slot = 7
+talk = "ch3_tuck_cry"
+
+[[forced]]
+slot = 8
+talk = "ch3_kitty_warn"
+
+[[forced]]
+slot = 10
+talk = "ch3_storm"
+
+[[forced]]
+slot = 11
+talk = "ch3_storm_news"
+cond = "flag:ch3_kitty_dead"
+
+[[forced]]
+slot = 11
+talk = "ch3_flea_tickets"
+
+[[forced]]
+slot = 12
+talk = "ch3_tuck_share"
+
+[[forced]]
+slot = 12
+talk = "ch3_sam_first"
+cond = "not seen:ch3_sam_first"
+
+[[forced]]
+slot = 12
+talk = "ch3_ned_first"
+cond = "not seen:ch3_ned_first"
+
+[[forced]]
+slot = 13
+talk = "ch3_anne_first"
+cond = "not seen:ch3_anne_first"
+
+[[forced]]
+slot = 14
+talk = "ch3_lucy_first"
+cond = "not seen:ch3_lucy_first"
+
+[[forced]]
+slot = 14
+talk = "ch3_will_first"
+cond = "not seen:ch3_will_first"
+
+[[forced]]
+slot = 15
+talk = "ch3_cobb_bridge"
+
+[[forced]]
+slot = 15
+talk = "ch3_reg_first"
+cond = "not seen:ch3_reg_first"
+
+[[spot]]
+id = "ch3_market"
+name = "水果市场"
+place = "科文特花园"
+talk = "ch3_market"
+
+[[spot]]
+id = "ch3_elias"
+name = "以利亚"
+place = "科文特花园"
+talk = "ch3_elias"
+
+[[spot]]
+id = "ch3_flea"
+name = "跳蚤"
+place = "布罗德街"
+talk = "ch3_flea"
+
+[[spot]]
+id = "ch3_pym"
+name = "皮姆"
+place = "圣吉尔斯法衣室"
+talk = "ch3_pym"
+
+[[spot]]
+id = "ch3_bow"
+name = "菲尔丁宅"
+place = "弓街"
+talk = "ch3_bow"
+
+[[spot]]
+id = "ch3_gale"
+name = "盖尔"
+place = "法官巷高级律师公会"
+talk = "ch3_gale"
+
+[[spot]]
+id = "ch3_mad"
+name = "玛德莱娜"
+place = "斯皮塔佛德"
+talk = "ch3_mad"
+cond = "seen:ch3_gale_first"
+
+[[spot]]
+id = "ch3_violette"
+name = "勒费弗尔太太"
+place = "斯皮塔佛德"
+talk = "ch3_violette"
+cond = "flag:ch3_proxy_asked and not flag:ch3_proxy and not flag:ch3_proxy_refused"
+
+[[spot]]
+id = "ch3_griggs"
+name = "格里格斯的住处"
+place = "牛栏十字"
+talk = "ch3_griggs"
+cond = "flag:ch3_griggs_known"
+
+[[spot]]
+id = "ch3_ned"
+name = "内德"
+place = "老天鹅码头"
+talk = "ch3_ned"
+cond = "has:c3_ten_list"
+
+[[spot]]
+id = "ch3_lucy"
+name = "露西"
+place = "伯利恒"
+talk = "ch3_lucy"
+cond = "has:c3_ten_list"
+
+[[spot]]
+id = "ch3_will"
+name = "威尔"
+place = "弗利特监狱"
+talk = "ch3_will"
+cond = "has:c3_ten_list"
+
+[[spot]]
+id = "ch3_sam"
+name = "萨姆的家"
+place = "沃平"
+talk = "ch3_sam"
+cond = "has:c3_ten_list"
+
+[[spot]]
+id = "ch3_anne"
+name = "安妮的住处"
+place = "克拉肯韦尔"
+talk = "ch3_anne"
+cond = "has:c3_ten_list"
+
+[[spot]]
+id = "ch3_kitty"
+name = "基蒂"
+place = "史密斯菲尔德"
+talk = "ch3_kitty"
+cond = "has:c3_ten_list and not seen:ch3_storm"
+
+[[spot]]
+id = "ch3_reg"
+name = "长存册"
+place = "法官巷高级律师公会"
+talk = "ch3_reg"
+cond = "seen:ch3_gale_first"
+
+[[spot]]
+id = "ch3_tuck"
+name = "老塔克"
+place = "教堂巷岗亭"
+talk = "ch3_tuck"
+cond = "seen:ch3_tuck_cobb"
